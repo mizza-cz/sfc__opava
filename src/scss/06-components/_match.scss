@@ -1,0 +1,132 @@
+.match {
+  padding: 24px 40px;
+  background-color: #fff;
+  border-bottom: 2px solid var(--color-gray);
+  &:last-child {
+    border-bottom: none;
+  }
+  @include media-breakpoint-down(xl) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn + .btn {
+    margin-left: 4px;
+  }
+  &--d,
+  &--o {
+    background: rgb(238, 240, 242);
+  }
+
+  &__info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      flex-direction: column;
+      // align-items: end;
+      margin-left: 0;
+    }
+  }
+  &__result {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 68px;
+    line-height: 100%;
+    @include media-breakpoint-down(xl) {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+  &__links {
+    @include media-breakpoint-down(xl) {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      .btn {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &__team {
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 16px;
+    }
+    h3 {
+      line-height: 1.5;
+    }
+    .p3 {
+      padding-left: 18px;
+      position: relative;
+      line-height: 16px;
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../images/ico/location.svg');
+        left: 0;
+        width: 13px;
+        height: 16px;
+      }
+    }
+  }
+  &__logos {
+    position: relative;
+    display: flex;
+    padding: 0 32px;
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      justify-content: center;
+      margin: 48px 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/ico/hriste.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 112px;
+      top: -22px;
+      left: -60px;
+      @include media-breakpoint-down(xl) {
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  &__logo {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    z-index: 3;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__date {
+    min-width: 160px;
+    padding: 0 16px;
+  }
+  &__type {
+    border: 1px solid var(--color-blue);
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .h4 {
+      color: var(--color-blue);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.lose {
+  color: $red;
+}
+.win {
+  color: $green;
+}

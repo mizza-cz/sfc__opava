@@ -1,0 +1,12 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "04.0_Zápasy" %}
+
+{% block main %}
+   <section class="matches-section">
+      {% include "@components/matches-section/matches-section.twig" %}
+   </section>
+   {% include "@components/pub-section/pub-section.twig" %}
+   {% include "@components/partneri-section/partneri-section.twig" %}
+
+{% endblock %}

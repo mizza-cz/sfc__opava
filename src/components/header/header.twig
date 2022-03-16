@@ -1,0 +1,116 @@
+<header class="header w-100">
+   <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+         <a class="header__logo" href="">
+            <div class="header__logo-img">
+               <img src="images/content/logo.png"  loading="lazy" alt="logo" />
+            </div>
+            <h3 class="h3">Slezský FC Opava</h3>
+         </a>
+         <button class="c-header__opener js-header__opener" type="button">
+            <span></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="klub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Klub
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="klub">
+                     <li><a class="dropdown-item" href="#">Profil klubu</a></li>
+                     <li><a class="dropdown-item" href="#">Vedení klubu</a></li>
+                     <li><a class="dropdown-item" href="#">Kontakty</a></li>
+                     <li><a class="dropdown-item" href="#">Stadion</a></li>
+                     <li><a class="dropdown-item" href="#">Další sportoviště</a></li>
+                     <li><a class="dropdown-item" href="#">Historie</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="a-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     A-tým
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="a-tym">
+                     <li><a class="dropdown-item" href="#">Soupiska</a></li>
+                     <li><a class="dropdown-item" href="#">Realizační tým</a></li>
+                     <li><a class="dropdown-item" href="#">Zápasy</a></li>
+                     <li><a class="dropdown-item" href="#">Tabulka</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="b-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     B-tým
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="b-tym">
+                     <li><a class="dropdown-item" href="#">Soupiska</a></li>
+                     <li><a class="dropdown-item" href="#">Realizační tým</a></li>
+                     <li><a class="dropdown-item" href="#">Zápasy</a></li>
+                     <li><a class="dropdown-item" href="#">Tabulka</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="mladez" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Mládež
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="mladez">
+                     <li><a class="dropdown-item" href="#">Základní informace</a></li>
+                     <li><a class="dropdown-item" href="#">Kontakty</a></li>
+                     <li><a class="dropdown-item" href="#">Výchova mládeže</a></li>
+                     <li><a class="dropdown-item" href="#">Sportovní centrum</a></li>
+                     <li><a class="dropdown-item" href="#">Sportovní třídy</a></li>
+                     <li><a class="dropdown-item" href="#">Fotbalová školička</a></li>
+                     <li><a class="dropdown-item" href="#">Nábor</a></li>
+                     <li><a class="dropdown-item" href="#">Spolupráce s SDG</a></li>
+                     <li><a class="dropdown-item" href="#">ZŠ Rabasova</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     <li class="submenu  position-relative">
+                        <a  class="dropdown-item dropdown-toggle">
+                           Spolupracují školy
+                        </a>
+                        <ul class="dropdown-submenu submenu">
+                           <li><a href="#" class="dropdown-item">Gymnázium Jateční</a></li>
+                           <li><a href="#" class="dropdown-item">Gymnázium a SOŠ Stavbařů</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="fanzona" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Fanzóna
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="fanzona">
+                     <li><a class="dropdown-item" href="#">Zpravodaje online</a></li>
+                     <li><a class="dropdown-item" href="#">Hráč utkání</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">
+                     Média
+                  </a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="vstupenky" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Vstupenky
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="vstupenky">
+                     <li><a class="dropdown-item" href="#">Permanentky</a></li>
+                     <li><a class="dropdown-item" href="#">Vstupenky</a></li>
+                     <li><a class="dropdown-item" href="#">On-line prodej</a></li>
+                     <li><a class="dropdown-item" href="#">VIP sedadlo</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">
+                     Partneři
+                  </a>
+               </li>
+            </ul>
+            <div class="social-mob">
+               {% include "@components/social/social.twig" %}
+            </div>
+
+         </div>
+          {% include "@components/social/social.twig" %}
+      </nav>
+   </div>
+</header>

@@ -1,0 +1,12 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "03.0_Soupiska" %}
+
+{% block main %}
+   <section class="soupiska">
+      {% include "@components/soupiska-section/soupiska-section.twig" %}
+   </section>
+   {% include "@components/pub-section/pub-section.twig" %}
+   {% include "@components/partneri-section/partneri-section.twig" %}
+
+{% endblock %}

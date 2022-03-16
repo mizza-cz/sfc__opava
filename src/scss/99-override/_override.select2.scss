@@ -1,0 +1,94 @@
+/*! purgecss start ignore */
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--color-blue);
+}
+.select2-container {
+  .select2-selection--single {
+    height: auto;
+    padding: 1px 38px 2px 24px;
+    border-color: var(--color-blue);
+    outline: solid transparent 1px;
+    transition: all 0.3s;
+  }
+}
+.select2-container--open {
+  .select2-selection--single {
+    border-color: var(--color-blue);
+    outline-color: var(--color-blue);
+  }
+}
+.-error {
+  .select2-container {
+    .select2-selection--single {
+      border-color: var(--color-error);
+      outline-color: var(--color-error);
+    }
+  }
+}
+.-disabled {
+  cursor: not-allowed;
+  * {
+    cursor: not-allowed;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--color-gray);
+  }
+  .select2-container {
+    .select2-selection--single {
+      background-color: var(--color-light);
+      border-color: var(--color-gray);
+    }
+  }
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 2px;
+  right: 24px;
+  width: 10px;
+  b {
+    background-image: url('../images/ico/chevron.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 10px;
+    height: 10px;
+  }
+}
+.select2-dropdown {
+  top: 2px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.select2-results__options {
+  > li {
+    padding: 12px 16px;
+    > span {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+  .select2-results__option--selected {
+    background-color: var(--color-gray) !important;
+  }
+  .select2-results__option--highlighted  {
+    background-color: var(--color-blue) !important;
+  }
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: var(--color-blue);
+  font-size: 16px;
+
+  font-weight: 700;
+  padding: 0;
+}
+/*! purgecss end ignore */
+.select2-container--default .select2-selection--single {
+  border: 2px solid var(--color-blue);
+  height: 33px;
+}

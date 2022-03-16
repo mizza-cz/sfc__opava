@@ -1,0 +1,137 @@
+.team {
+  .team-section__img img {
+    object-position: 0 24px;
+  }
+}
+.team-section {
+  &__hover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: translateY(115%);
+    transform: translateY(115%);
+    transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    opacity: 0;
+    z-index: 17;
+    background: rgba(#000, 0.4);
+    padding: 16px;
+    &-img {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+    ul {
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--color-light);
+      li {
+        padding: 0 12px;
+      }
+    }
+  }
+  &__info {
+    color: var(--color-light);
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    z-index: 14;
+    padding: 0 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease-out;
+    transform: translateY(0);
+    p {
+      max-width: 73px;
+      text-align: right;
+    }
+    .h3 {
+      text-align: left;
+      text-transform: uppercase;
+      span {
+        font-size: 1rem;
+        line-height: 1.375;
+        display: block;
+      }
+    }
+  }
+  &__items {
+    .row {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  &__item {
+    color: var(--color-text-base);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 0.0625rem solid var(--color-gray-opacity-12);
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+    height: 377px;
+    position: relative;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      .team-section__hover {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .team-section__info {
+        transform: translateY(-2rem);
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    &::after {
+      bottom: 0;
+      z-index: 13;
+      background: linear-gradient(180deg, rgba(0, 79, 159, 0.0001) 38.87%, #004f9f 100%);
+    }
+    &::before {
+      top: 0;
+      background-image: url('../images/content/pozadi_stadion.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__img {
+    height: 377px;
+    width: 100%;
+    position: relative;
+    z-index: 12;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+ 
+}
+
+.team-section__item:hover {
+  .team-section__hover {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .team-section__info {
+    transform: translateY(-2rem);
+  }
+}

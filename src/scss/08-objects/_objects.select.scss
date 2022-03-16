@@ -1,0 +1,23 @@
+.o-select {
+  position: relative;
+  display: block;
+  max-width: fit-content;
+  padding-right: 16px;
+  &:first-child {
+    //  margin-left: -16px;
+    @include media-breakpoint-down(xl) {
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+    margin-bottom: 16px;
+    padding-right: 0;
+    width: 100%;
+  }
+  &.-error {
+    .o-select__label {
+      color: var(--color-error);
+    }
+  }
+}
