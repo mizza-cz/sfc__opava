@@ -10,8 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203163975" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202203163975" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203213815" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202203213815" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -26,7 +26,7 @@
 						<div class="header__logo-img">
 							<img src="images/content/logo.png" loading="lazy" alt="logo" />
 						</div>
-						<h3 class="h3">Slezský FC Opava</h3>
+						<div class="h2">Slezský FC Opava</div>
 					</a>
 					<button class="c-header__opener js-header__opener" type="button">
 						<span></span>
@@ -200,7 +200,6 @@
 				<p class="p2">P2 - odstavec</p>
 				<p class="p3">P3 - odstavec</p>
 				<p class="p4">P4 - odstavec</p>
-				<p class="p5">P5 - odstavec</p>
 				<hr />
 				<h2 class="h2 mb-2">## Nadpisy</h2>
 				<h1 class="h1">H1 - nadpis</h1>
@@ -208,52 +207,30 @@
 				<h3 class="h3">H3 - nadpis</h3>
 				<h4 class="h4">H4 - nadpis</h4>
 				<h5 class="h5">H5 - nadpis</h5>
+				<h6 class="h6">H6 - nadpis</h6>
 				<hr />
-
-				<h2 class="h2 mb-2">## Tlačítka - secondary</h2>
+				<h2 class="h2 mb-2">## Tlačítka - primary</h2>
+				<br>
 				<a class="btn f-btn" href="">Button</a><br />
-				<br />
-				<button class="btn" disabled>Button</button><br />
-				<br />
-				<a class="btn btn-secondary-light" href="">Button</a><br />
 				<br />
 				<button class="btn f-btn" disabled>Button</button><br />
 				<br />
 				<a class="btn btn-secondary-text" href="">Button</a><br />
 				<br />
-				<button class="btn btn-secondary-text" disabled>Button</button>
+				<button class="btn btn-secondary-text" disabled>Button</button><br />
+				<br />
 				<hr />
+				<h2 class="h2 mb-2">## Tlačítka - secondary</h2>
+				<a class="btn p-btn" href="">Button</a><br />
+				<br />
+				<button class="btn p-btn" disabled>Button</button><br />
+				<br />
+
 				<h2 class="h2 mb-2">## Stíny</h2>
 				<div class="p-3 u-shadow-1" style="background-color: #fff" ;>
 					Stín 1 dp
 				</div>
-				<div class="p-3 u-shadow-2" style="background-color: #fff" ;>
-					Stín 2 dp
-				</div>
-				<div class="p-3 u-shadow-3" style="background-color: #fff" ;>
-					Stín 3 dp
-				</div>
-				<div class="p-3 u-shadow-4" style="background-color: #fff" ;>
-					Stín 4 dp
-				</div>
-				<div class="p-3 u-shadow-6" style="background-color: #fff" ;>
-					Stín 6 dp
-				</div>
-				<div class="p-3 u-shadow-8" style="background-color: #fff" ;>
-					Stín 8 dp
-				</div>
-				<div class="p-3 u-shadow-9" style="background-color: #fff" ;>
-					Stín 9 dp
-				</div>
-				<div class="p-3 u-shadow-12" style="background-color: #fff" ;>
-					Stín 12 dp
-				</div>
-				<div class="p-3 u-shadow-16" style="background-color: #fff" ;>
-					Stín 16 dp
-				</div>
-				<div class="p-3 u-shadow-24" style="background-color: #fff" ;>
-					Stín 24 dp
-				</div>
+
 				<hr />
 				<h2 class="h2 mb-2">## Dropdown</h2>
 				<label class="o-select mb-8">
@@ -264,27 +241,16 @@
 						<option value="tipsport">Dropdown 3</option>
 						<option value="tipsport">Dropdown 4</option>
 					</select>
-					<span class="o-select__label">Label</span>
 				</label>
-				<label class="o-select mb-8">
-					<select class="js-select-with-image">
-						<option value="tipsport">Dropdown</option>
-						<option value="tipsport">Dropdown 1</option>
-						<option value="tipsport">Dropdown 2</option>
-						<option value="tipsport">Dropdown 3</option>
-						<option value="tipsport">Dropdown 4</option>
-					</select>
-					<span class="o-select__label">Label</span>
-				</label>
+
 				<label class="o-select -error mb-8">
-					<select class="js-select-with-image">
+					<select class="js-select">
 						<option value="tipsport">Dropdown</option>
 						<option value="tipsport">Dropdown 1</option>
 						<option value="tipsport">Dropdown 2</option>
 						<option value="tipsport">Dropdown 3</option>
 						<option value="tipsport">Dropdown 4</option>
 					</select>
-					<span class="o-select__label">Label</span>
 				</label>
 				<label class="o-select -disabled mb-8">
 					<select class="js-select" disabled>
@@ -294,7 +260,6 @@
 						<option value="tipsport">Dropdown 3</option>
 						<option value="tipsport">Dropdown 4</option>
 					</select>
-					<span class="o-select__label">Label</span>
 				</label>
 				<hr />
 			</div>
@@ -304,16 +269,16 @@
 			<div class="container">
 
 				<div class="row d-flex justify-content-between align-items-center h-100 position-relative">
-					<div class="footer__logo">
-						<img src="images/content/logo.png" loading="lazy" alt="" />
-					</div>
-					<p class="p3 col-lg-6">
+					<a href="#" class="footer__logo">
+						<img src="images/ico/logo.svg" loading="lazy" alt="" />
+					</a>
+					<p class="p2 col-lg-6">
 						<strong>
 							&copy; 2019 – 2022 Slezský FC Opava & <a href="#">eSports.cz,</a> s.r.o.
 						</strong>
 					</p>
 					<div class="footer__social align-items-center  justify-content-center col-lg-6 d-flex justify-content-md-end">
-						<a href="#" class="p3">
+						<a href="#" class="p2">
 							Nastavení cookies
 						</a>
 						<ul class="social">
@@ -354,7 +319,7 @@
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=202203163852"></script>
+	<script defer src="js/scripts.js?v=202203213188"></script>
 </body>
 
 </html>

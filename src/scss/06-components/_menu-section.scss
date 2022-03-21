@@ -1,6 +1,6 @@
 .menu-section {
   padding-top: 40px;
-  padding-bottom: 1.6rem;
+  padding-bottom: 32px;
   margin-bottom: 40px;
   box-shadow: -1px 0px 34px -1px rgba(0, 0, 0, 0.11);
   background-color: var(--color-light);
@@ -8,41 +8,60 @@
     margin-bottom: 20px;
     padding-bottom: 0.5rem;
   }
+
+  &__form {
+    flex-wrap: wrap;
+    label + label {
+      margin-left: 16px;
+    }
+    @include media-breakpoint-down(xxl) {
+      width: 100%;
+      margin-left: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__btn {
+    @include media-breakpoint-down(xxl) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__links {
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-right: 32px;
+    @include media-breakpoint-down(xxl) {
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(lg) {
+      .ms-8 {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+    li {
+      padding: 0 4px;
+      @include media-breakpoint-down(xxl) {
+        margin-bottom: 16px;
+      }
+    }
+  }
   &__inner {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    form {
-      flex-wrap: wrap;
-    }
     @include media-breakpoint-down(xxl) {
       flex-wrap: wrap;
-      .btn {
-        margin-right: 16px;
-        margin-bottom: 16px;
-        &:first-child {
-          padding-left: 16px;
-          margin-left: -16px;
-        }
-      }
-      .btn + .btn {
-        margin-left: 0;
-      }
-      form {
-        width: 100%;
-        margin-left: 0;
-      }
     }
+
     @include media-breakpoint-down(sm) {
       align-items: flex-start;
-      form {
-        max-width: 100%;
-        width: 100%;
-      }
     }
   }
-  .h2 {
-    color: var(--color-blue);
+  .h1 {
     margin-right: 80px;
     @include media-breakpoint-down(xxl) {
       margin-bottom: 16px;

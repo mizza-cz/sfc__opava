@@ -2,6 +2,7 @@
   padding: 24px 40px;
   background-color: #fff;
   border-bottom: 2px solid var(--color-gray);
+
   &:last-child {
     border-bottom: none;
   }
@@ -25,7 +26,6 @@
     @include media-breakpoint-down(xl) {
       width: 100%;
       flex-direction: column;
-      // align-items: end;
       margin-left: 0;
     }
   }
@@ -53,7 +53,7 @@
     @include media-breakpoint-down(xl) {
       margin-bottom: 16px;
     }
-    h3 {
+    h2 {
       line-height: 1.5;
     }
     .p3 {
@@ -61,9 +61,9 @@
       position: relative;
       line-height: 16px;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
-        background-image: url('../images/ico/location.svg');
+        background-image: url("../images/ico/location.svg");
         left: 0;
         width: 13px;
         height: 16px;
@@ -80,9 +80,9 @@
       margin: 48px 0;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
-      background-image: url('../images/ico/hriste.svg');
+      background-image: url("../images/ico/hriste.svg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 240px;
@@ -117,7 +117,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .h4 {
+    .h3 {
       color: var(--color-blue);
       text-transform: uppercase;
     }

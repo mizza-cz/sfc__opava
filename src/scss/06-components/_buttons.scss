@@ -9,10 +9,13 @@
   text-transform: uppercase;
   letter-spacing: -0.25px;
   color: var(--color-gray);
-  &:hover {
-    color: var(--color-blue);
-    border: 2px solid var(--color-blue);
-  }
+  transition: all 0.3s;
+}
+a.btn:hover,
+button.btn:hover {
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  transform: scale(1.1);
 }
 div.btn {
   cursor: default;
@@ -24,7 +27,7 @@ div.btn {
   background-color: var(--color-blue);
   color: var(--color-light);
   border: 2px solid var(--color-blue);
-  &.btn:hover {
+  &:hover {
     color: var(--color-light) !important;
   }
 }
@@ -33,10 +36,14 @@ div.btn {
 }
 
 .btn.btn-secondary-text {
-  border: transparent;
+  border: 2px solid transparent;
   color: var(--color-blue);
 }
 .btn.p-btn {
   color: var(--color-blue);
   border: 2px solid var(--color-blue);
+  &:active {
+    color: var(--color-light);
+    background-color: var(--color-blue);
+  }
 }

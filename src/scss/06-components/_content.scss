@@ -2,7 +2,7 @@
   &::after {
     display: table;
     clear: both;
-    content: '';
+    content: "";
   }
   h1,
   h2,
@@ -13,7 +13,6 @@
       margin-top: 0 !important;
     }
   }
-
   > :first-child {
     margin-top: 0;
   }
@@ -25,55 +24,105 @@
     margin-bottom: 16px !important;
     color: var(--color-blue);
   }
+
+  p {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 24px 0;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 
 .h1,
 .o-content h1 {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 68px;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--color-blue);
   @include media-breakpoint-down(md) {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 .h2,
 .o-content h2 {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 30px;
   @include media-breakpoint-down(md) {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 .h3,
 .o-content h3 {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 26px;
   @include media-breakpoint-down(md) {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 .h4,
 .o-content h4 {
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  color: var(--color-blue);
   @include media-breakpoint-down(md) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
 }
+.h5,
+.o-content h5 {
+  font-size: 16px;
+  line-height: 20px;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.h6,
+.o-content h6 {
+  font-size: 14px;
+  line-height: 16px;
+}
 
+.p1 {
+  font-size: 16px;
+  line-height: 22px;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.p2 {
+  font-size: 14px;
+  line-height: 17px;
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .p3 {
   font-size: 14px;
   line-height: 20px;
   @include media-breakpoint-down(md) {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+.p4 {
+  font-size: 16px;
+  line-height: 17px;
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+    line-height: 13px;
   }
 }
 

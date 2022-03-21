@@ -2,9 +2,7 @@
   position: relative;
   display: block;
   max-width: fit-content;
-  padding-right: 16px;
   &:first-child {
-    //  margin-left: -16px;
     @include media-breakpoint-down(xl) {
     }
   }
@@ -14,10 +12,23 @@
     margin-bottom: 16px;
     padding-right: 0;
     width: 100%;
+    margin-left: 0 !important;
   }
-  &.-error {
-    .o-select__label {
-      color: var(--color-error);
-    }
+}
+.-error {
+  .o-select__label {
+    color: var(--color-error);
+  }
+}
+.-disabled {
+  cursor: not-allowed;
+  * {
+    cursor: not-allowed;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    opacity: 0.2;
   }
 }

@@ -1,7 +1,7 @@
 .header {
   padding: 0 4rem;
   color: var(--color-white);
-  background-color: var(--color-blue);
+  background: linear-gradient(135deg, #023e7a 0%, #004f9f 100%);
   @include media-breakpoint-down(xxl) {
     padding: 0;
   }
@@ -15,7 +15,7 @@
     @include media-breakpoint-down(sm) {
       padding-left: 88px;
     }
-    h3 {
+    .h2 {
       color: var(--color-light);
     }
     &-img {
@@ -67,23 +67,6 @@
         width: 100% !important;
         right: 0 !important;
         box-shadow: none !important;
-      }
-    }
-
-    .navbar-nav .nav-link {
-      color: var(--color-light);
-      font-size: 16px;
-      line-height: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding-left: 16px;
-      padding-right: 16px;
-      @include media-breakpoint-down(xl) {
-        color: var(--color-blue);
-      }
-      &.show {
-        color: var(--color-blue);
-        background-color: var(--color-yellow);
       }
     }
   }
@@ -144,7 +127,7 @@
     display: block;
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 24px;
       height: 3px;
@@ -171,6 +154,28 @@
     display: none;
   }
 }
+.nav-link {
+  color: var(--color-light);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include media-breakpoint-down(xl) {
+    color: var(--color-blue);
+  }
+  &.show {
+    color: var(--color-blue);
+    background-color: var(--color-yellow);
+  }
+}
+.nav-item {
+  .nav-link:hover {
+    color: var(--color-blue);
+    background-color: var(--color-yellow);
+  }
+}
 
 .dropdown {
   &-toggle {
@@ -192,6 +197,9 @@
     }
     li {
       border-bottom: 1px solid var(--color-shadow);
+      &:last-child {
+        border-bottom: none;
+      }
     }
     &[data-bs-popper] {
       margin-top: 0;
@@ -221,5 +229,17 @@
         }
       }
     }
+  }
+}
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
   }
 }

@@ -10,8 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203163975" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202203163975" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203213815" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202203213815" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -26,7 +26,7 @@
 						<div class="header__logo-img">
 							<img src="images/content/logo.png" loading="lazy" alt="logo" />
 						</div>
-						<h3 class="h3">Slezský FC Opava</h3>
+						<div class="h2">Slezský FC Opava</div>
 					</a>
 					<button class="c-header__opener js-header__opener" type="button">
 						<span></span>
@@ -192,696 +192,742 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			<section class="soupiska">
-				<div class="team-section">
-					<div class="menu-section">
-						<div class="container">
-							<div class="menu-section__inner">
-								<h2 class="h2">
-									Soupiska A-tým
-								</h2>
-								<a href="#" class=" btn">
-									Brankáři
-								</a>
-								<a href="#" class=" btn">
-									Obránci
-								</a>
-								<a href="#" class=" btn">
-									Záložníci
-								</a>
-								<a href="#" class=" btn">
-									Útočníci
-								</a>
-								<div class=" f-btn btn">
-									Realizační tým
-								</div>
-								<form action="" class="ms-auto w-auto">
-									<label class="o-select">
-										<select class="js-select">
-											<option>2021/22</option>
-											<option value="tipsport">2020/21</option>
-											<option value="tipsport">2019/20</option>
-											<option value="tipsport">2018/19</option>
-											<option value="tipsport">2017/18</option>
-										</select>
-									</label>
-								</form>
-							</div>
+			<section class="team-section">
+				<div class="menu-section">
+					<div class="container">
+						<div class="menu-section__inner">
+							<h1 class="h1">
+								Soupiska A-tým
+							</h1>
+							<ul class="menu-section__links d-flex">
+								<li>
+									<a href="#" class=" btn">
+										Brankáři
+									</a>
+								</li>
+								<li>
+									<a href="#" class=" btn">
+										Obránci
+									</a>
+								</li>
+								<li>
+									<a href="#" class=" btn">
+										Záložníci
+									</a>
+								</li>
+								<li>
+									<a href="#" class=" btn">
+										Útočníci
+									</a>
+								</li>
+								<li class="ms-8">
+									<div class="f-btn btn">
+										Realizační tým
+									</div>
+								</li>
+
+							</ul>
+
+							<form action="" class="ms-auto w-auto menu-section__form">
+								<label class="o-select menu-section__label">
+									<select class="js-select">
+										<option>2021/22</option>
+										<option value="tipsport">2020/21</option>
+										<option value="tipsport">2019/20</option>
+										<option value="tipsport">2018/19</option>
+										<option value="tipsport">2017/18</option>
+									</select>
+								</label>
+							</form>
 						</div>
 					</div>
-					<div class="team-section__items">
-						<div class="container">
-							<div class="o-content">
-								<h3>
-									Brankáři
-								</h3>
-							</div>
-							<ul class="row d-flex">
-								<li class=" col-lg-4 col-xxl-3 col-sm-6  pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-3.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-1.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>asistent trenéra</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<div class="o-content">
-								<h3>
-									Obránci
-								</h3>
-							</div>
-
-							<ul class="row d-flex">
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>kondiční trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>kondiční trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<div class="o-content">
-								<h3>
-									Záložníci
-								</h3>
-							</div>
-
-							<ul class="row d-flex">
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>kondiční trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>kondiční trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<div class="o-content">
-								<h3>
-									Útočníci
-								</h3>
-							</div>
-
-							<ul class="row d-flex">
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>kondiční trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>kondiční trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-								<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
-									<a class="team-section__item" href="#">
-										<div class="team-section__img">
-											<img src="images/content/hrac-2.png" loading="lazy" alt="" />
-										</div>
-										<div class="team-section__info d-flex justify-content-between align-items-end   ">
-											<h3 class="h3">
-												<span>David</span>
-												Mikula
-											</h3>
-											<p>trenér</p>
-										</div>
-										<div class="team-section__hover">
-											<ul class=" d-flex justify-content-center align-items-center">
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/football.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/clock.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-												<li class="d-flex ">
-													<div class="team-section__hover-img">
-														<img src="images/ico/shield.svg" loading="lazy" alt="" />
-													</div>
-													16
-												</li>
-											</ul>
-										</div>
-									</a>
-								</li>
-							</ul>
-
+				</div>
+				<div class="team-section__items">
+					<div class="container">
+						<div class="o-content">
+							<h2 class="h2">
+								Brankáři
+							</h2>
 						</div>
+						<ul class="row">
+							<li class=" col-lg-4 col-xxl-3 col-sm-6  pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-3.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>Kryštof</span>
+											Lasák
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-1.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											19
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="o-content">
+							<h2 class="h2">
+								Obránci
+							</h2>
+						</div>
+
+						<ul class="row">
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="o-content">
+							<h2 class="h2">
+								Záložníci
+							</h2>
+						</div>
+
+						<ul class="row ">
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="o-content">
+							<h2 class="h2">
+								Útočníci
+							</h2>
+						</div>
+
+						<ul class="row ">
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+							<li class=" col-lg-4 col-xxl-3 col-sm-6 pe-5 ps-5">
+								<a class="team-section__item" href="#">
+									<div class="team-section__img">
+										<img src="images/content/hrac-2.png" loading="lazy" alt="" />
+									</div>
+									<div class="team-section__info d-flex justify-content-between align-items-end   ">
+										<h2 class="h2">
+											<span>David</span>
+											Mikula
+										</h2>
+										<div class="team-section__number">
+											29
+										</div>
+									</div>
+									<div class="team-section__hover">
+										<ul class=" d-flex justify-content-center align-items-center">
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/football.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/clock.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+											<li class="d-flex ">
+												<div class="team-section__hover-img">
+													<img src="images/ico/shield.svg" loading="lazy" alt="" />
+												</div>
+												16
+											</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+
 					</div>
 				</div>
 			</section>
 			<div class="pub">
 				<div class="container">
-					<div class="row d-flex c-gallery-section ms-n5 me-n5">
+					<div class="row  c-gallery-section ms-n5 me-n5">
 						<div class="col-xl-6 ps-5 pe-5">
 							<figure>
 								<a target="_blank" href="#" class=" d-block w-100 mb-4">
@@ -926,16 +972,16 @@
 			<div class="container">
 
 				<div class="row d-flex justify-content-between align-items-center h-100 position-relative">
-					<div class="footer__logo">
-						<img src="images/content/logo.png" loading="lazy" alt="" />
-					</div>
-					<p class="p3 col-lg-6">
+					<a href="#" class="footer__logo">
+						<img src="images/ico/logo.svg" loading="lazy" alt="" />
+					</a>
+					<p class="p2 col-lg-6">
 						<strong>
 							&copy; 2019 – 2022 Slezský FC Opava & <a href="#">eSports.cz,</a> s.r.o.
 						</strong>
 					</p>
 					<div class="footer__social align-items-center  justify-content-center col-lg-6 d-flex justify-content-md-end">
-						<a href="#" class="p3">
+						<a href="#" class="p2">
 							Nastavení cookies
 						</a>
 						<ul class="social">
@@ -976,7 +1022,7 @@
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=202203163852"></script>
+	<script defer src="js/scripts.js?v=202203213188"></script>
 </body>
 
 </html>
