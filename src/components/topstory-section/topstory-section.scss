@@ -1,6 +1,8 @@
 .topstory {
   max-width: 1920px;
   margin: 0 auto;
+  .active {
+  }
   .h1 {
     color: var(--color-light);
     margin-bottom: 24px;
@@ -35,7 +37,8 @@
       max-width: 100% !important;
       height: 400px !important;
     }
-    &.active {
+
+    &:first-child {
       max-width: 50%;
       @include media-breakpoint-down(xl) {
         max-width: 100%;
