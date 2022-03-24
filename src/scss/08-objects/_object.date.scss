@@ -1,0 +1,17 @@
+.date {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 6px 24px;
+  width: fit-content;
+}
+.date--blue {
+  color: var(--color-light);
+  background-color: var(--color-blue);
+}
+.date--small {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 6px 16px 5px;
+}

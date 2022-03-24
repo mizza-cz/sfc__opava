@@ -80,6 +80,7 @@
 }
 .h5,
 .o-content h5 {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   @include media-breakpoint-down(md) {
@@ -89,6 +90,7 @@
 }
 .h6,
 .o-content h6 {
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }

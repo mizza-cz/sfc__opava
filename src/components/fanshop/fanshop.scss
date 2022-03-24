@@ -1,0 +1,101 @@
+.fanshop {
+  margin-bottom: 40px;
+  &__btn {
+    border: 2px solid var(--color-light);
+    border-radius: 16px;
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 6px 24px 6px 18px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    svg {
+      width: 19px;
+      height: 16px;
+      margin-right: 8px;
+    }
+    &.fanshop__btn--blue {
+      border: 2px solid var(--color-blue);
+      color: var(--color-blue);
+      g path {
+        fill: var(--color-blue);
+      }
+    }
+  }
+
+  &-link {
+    background-color: var(--color-yellow);
+    display: block;
+    padding-top: 66px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 40px;
+    &:hover {
+      .fanshop-link__logo {
+        transform: scale(1.1);
+      }
+    }
+
+    .h2 {
+      line-height: 26px;
+      max-width: 90px;
+      margin: 0 auto 52px;
+      color: var(--color-blue);
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 24px;
+      }
+    }
+    &__logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+      transition: all 0.3s;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.product {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-left: 2px solid var(--color-yellow);
+  padding: 40px 18px;
+  &:hover {
+    .product__img {
+      transform: scale(1.1);
+    }
+  }
+  &__img {
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+    margin: 0 auto 16px;
+    transition: all 0.3s;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../images/content/bg-product.png");
+    background-repeat: no-repeat;
+  }
+}

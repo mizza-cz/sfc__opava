@@ -10,8 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203215055" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202203215055" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203245498" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202203245498" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -192,7 +192,532 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
+			<section class="topstory">
+				<div class="row m-0">
+					<div class="topstory__item">
+						<a class="topstory__img" href="#">
+							<img src="images/content/1.jpg" alt="">
+							<div class="topstory__info">
+								<h2 class="h1">
+									Vítězná série pokračuje! Varnsdorf zlomily trefy Šiguta s Holíkem
+								</h2>
+								<div class="date date--blue">16. 12. 2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="topstory__item active">
+						<a class="topstory__img" href="#">
+							<img src="images/content/2.jpg" alt="">
+							<div class="topstory__info">
+								<h1 class="h1">
+									West po porážce s Brnem: Měli jsme rozhodnout v první půli
+								</h1>
+								<div class="date date--blue">16. 12. 2021</div>
+							</div>
+						</a>
+					</div>
+					<div class="topstory__item">
+						<a class="topstory__img" href="#">
+							<img src="images/content/3.jpg" alt="">
+							<div class="topstory__info">
+								<h2 class="h1">
+									Domácí neporazitelnost trvá! Výhru nad béčkem Sparty řídil Helešic
+								</h2>
+								<div class="date date--blue">16. 12. 2021</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<div class="count-down">
+				<div class="count-down__inner">
+					<h5 class="h5 count-down__title">Další zápas SFC</h5>
+					<div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to " data-endtime="2022-10-22 21:00:00">
+						<span class="timer__item" id="timer-days">
+							<span class="timer__value h1"></span>
+							<span class="timer__label timer__label-days">dny</span>
+						</span>
+						<span class="timer__item" id="timer-hours">
+							<span class="timer__value h1"></span>
+							<span class="timer__label">hodiny</span>
+						</span>
+						<span class="timer__item" id="timer-minutes">
+							<span class="timer__value h1"></span>
+							<span class="timer__label">minuty</span>
+						</span>
+						<span class="timer__item" id="timer-seconds">
+							<span class="timer__value h1"></span>
+							<span class="timer__label">vteřiny</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="matches-dashboard">
+				<div class="container">
+					<div class="row ms-n5 me-n5">
+						<div class="col-xl-4 col-lg-8 ps-5 pe-5 mx-auto">
+							<div class="u-shadow-2 matches-dashboard__box">
+								<p class="p2 mb-6">
+									14. kolo F:NL / so 6. 11. 2021, 18:30
+								</p>
+								<div class="d-flex justify-content-center mb-8">
+									<div class="matches-dashboard__team">
+										<div class="matches-dashboard__logo">
+											<img src="images/ico/logo.svg" alt="">
+										</div>
+										<div class="h5">
+											Opava
+										</div>
+									</div>
 
+									<div class="matches-dashboard__info">
+										<span class="win">2:0</span>
+										vs.
+									</div>
+
+									<div class="matches-dashboard__team">
+										<div class="matches-dashboard__logo">
+											<img src="images/content/team-2.png" alt="">
+										</div>
+										<div class="h5">
+											Sparta B
+										</div>
+									</div>
+								</div>
+								<ul class="d-flex justify-content-center me-n1 ms-n1">
+									<li class="pe-1 ps-1 mb-1">
+										<a href="#" class="btn p-btn">Reportáž</a>
+									</li>
+									<li class="pe-1 ps-1 mb-1">
+										<a href="#" class="btn p-btn">Fotogalerie</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-8  ps-5 pe-5 mx-auto">
+							<div class="u-shadow-2 matches-dashboard__box">
+								<p class="p2 mb-6">
+									14. kolo F:NL / so 6. 11. 2021, 18:30
+								</p>
+								<div class="d-flex justify-content-center mb-8">
+									<div class="matches-dashboard__team">
+										<div class="matches-dashboard__logo">
+											<img src="images/ico/logo.svg" alt="">
+										</div>
+										<div class="h5">
+											Opava
+										</div>
+									</div>
+
+									<div class="matches-dashboard__info">
+										<span>16:00</span>
+										vs.
+									</div>
+
+									<div class="matches-dashboard__team">
+										<div class="matches-dashboard__logo">
+											<img src="images/content/team-2.png" alt="">
+										</div>
+										<div class="h5">
+											Sparta B
+										</div>
+									</div>
+								</div>
+								<ul class="d-flex justify-content-center me-n1 ms-n1">
+									<li class="pe-1 ps-1 mb-1">
+										<a href="#" class="btn f-btn">Vstupenky</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-8 ps-5 pe-5 mx-auto">
+							<div class=" u-shadow-2 matches-dashboard__table">
+								<div class="d-flex flex-wrap justify-content-between align-items-center">
+									<a href="https://www.fnliga.cz/" class="matches-dashboard__table-partner">
+										<img src="images/content/logo-fnl_2018.png" alt="">
+									</a>
+									<a href="#" class="matches-dashboard__table-link">
+										Celá tabulka
+									</a>
+								</div>
+								<div class="matches-dashboard__table-wrapper">
+									<table>
+										<tr>
+											<td class="num">4.</td>
+											<td class="logo">
+												<img src="images/content/team-2.png" alt="">
+											</td>
+											<td>FC Sellier&Bellot Vlašim</td>
+											<td class="text-end">15</td>
+											<td class="text-end ps-6">26</td>
+										</tr>
+										<tr>
+											<td class="num">5.</td>
+											<td class="logo">
+												<img src="images/content/team-2.png" alt="">
+											</td>
+											<td>1. SK Prostějov</td>
+											<td class="text-end">13</td>
+											<td class="text-end ps-6">14</td>
+										</tr>
+										<tr class="opava">
+											<td class="num">6.</td>
+											<td class="logo">
+												<img src="images/ico/logo.svg" alt="">
+											</td>
+											<td>Slezský FC Opava</td>
+											<td class="text-end">12</td>
+											<td class="text-end ps-6">21</td>
+										</tr>
+										<tr>
+											<td class="num">7.</td>
+											<td class="logo">
+												<img src="images/content/team-2.png" alt="">
+											</td>
+											<td>FK Varnsdorf</td>
+											<td class="text-end">23</td>
+											<td class="text-end ps-6">23</td>
+										</tr>
+										<tr>
+											<td class="num">8.</td>
+											<td class="logo">
+												<img src="images/content/team-2.png" alt="">
+											</td>
+											<td>FK Dukla Praha</td>
+											<td class="text-end">24</td>
+											<td class="text-end ps-6">24</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fanshop">
+				<div class="container">
+					<div class="d-flex flex-wrap">
+						<div class="col-xl-3 col-sm-6 col-12">
+							<a href="#" class="fanshop-link">
+								<div class="fanshop-link__logo">
+									<img src="images/ico/logo.svg" alt="">
+								</div>
+								<h2 class="h2">
+									Oficiální
+									e-shop
+								</h2>
+								<div class="fanshop__btn fanshop__btn--blue">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M0 0h18.56v16H0z" />
+										<mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="16">
+											<path fill="url(#pattern1)" d="M0 0h18.56v16H0z" />
+										</mask>
+										<g mask="url(#a)">
+											<path fill="#fff" d="M0 0h18.56v16H0z" />
+										</g>
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<image id="image0_2_34" width="58" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAyCAYAAAAN6MhFAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAOqADAAQAAAABAAAAMgAAAACT2+A1AAAEo0lEQVRoBdVaSWgUQRRNjAsqEreDuBFcwAVRXC4qhLgvKK4HvRgMKAiCJ/GgXtSDBwWvelLUkxuI4r6hoh5U3MDgMiBGwT1uGKPxvXFqqPz+nemprpnpfHjp+q9//V+/U7+rqpPylpaWMkgdMA+ooJJD/uL+HWA30JTDNjm3kegawEX2oFNZe0EHPPK5jo99FfpFmQGO7v12Y6IvHF1Wot9Ex75F78ZEtwFngHSx5jmCGXnal8y8nDUWUfrB7o2wvQK9RnCJVPNJlAk8AkZbmfxCuzfww+IS2eTUzUcuCOMu0KcKLpFqvoleVLJoF3Wa79TtgUQ/Afaycg/6eOUBJIrKN1EO/gYw2cqCb7MDlp6U5m8M5C6wD2ju6DAq1qmdaDl0bh6SKmMwsHX51iiT0eo0qUlyXCv4wyXRW+j3nZ3bibzlOF0S5YnlWjtJksO8xB8uNcp+rFN5GNgM7hBvhshq8FvEvfnQnwjOqKfRGGkUXF8DudbsTbBZa/Vh8xx/uCaq1SmLPkWnIfJR4RvApRSeFGeOLc1QUjahtCcI7g/0y+Rcpi77PQDesWHJdLT5Bi6V9EFgmehtcI0ckGuiXDvlb7UvuLF0WiLRHnR62nI8romyL+tUCoOVSmYrgc8bzrVG2V9LlN+djhrn4spTjpT+ID5LMqN3FjzHWiU4W51pK2h/ATh10+KyBTR9eX0GDLWJBLWPYyxLzHjiTF36yE4N4zBB12x9ckxxE5UvpATl+X/9NAOKO3VZd++BUi4rJhf7yg9+rUoqzsuIjrkJ4FFIrl98IX0DbBkFZZJNoH0S0DYSNFsI9GIjI9xfHzGKda1Cu9rS2QyWlIcP0DvhQ8pCEPLj9gZpBH2cYmf63Rf2qRDbbcKO6hJpG7dG9adXVjZDPOFCqnL95J9M0ht5O6iPRPnFgV8DbSnWxoHvCFk2XDsDa7OPRH/CMZO1hfXIzUChhQ9U5hCsT8XIdWDaMlOM3+osZcCt1k9zP+5b1/jhU9xhlMx1Ja5fLY7HOCk1IKokmdErBd8N+iLBzRF6I/Tsts++F3cdNb4q0OB62tMQJbqeQNzFWmw5vzWbKFz2gBvFuIA22kEjHc5XonSm1kYBk9Jc86+CqvhM9DAi1KtRikPuR5jnYaF81ajx3x2NBQD/xFgs4QbhMcBNAr98qOI7UTVIEkifUzcJ+YSOwdc6agfgiWMZMAJoAm4CpwBOMZ8yBc64z+0BpIBjwCtAF7nLj6kvRf/PgBSeRIYA5mQS59oTfk7LANCbgI2A6lslw4xz8NNw/w8QJi9xoxKIE7MD+l8F2pL1uBmIESA0o4jco7aiZ+5tj+grbFzLI8RohE3ggfp6GQ1HYdj/xKHXSXCvGmYXxme/6oUZgGfNBg4UvhId0EZg+9ZAW3FoR+0/SPr2legn6ThE/xDCR6Wj9ucBo5X4SvQhvDa08qwrZ3U6MhulfzO8BT6lhBW9C1+b40XBZWcw4OLb9OmK/k9zxNmlxTAOfF23IshfZSAfwFUDPuIMg596QJODIDsBgTiF2OuOw9SpA8zO6Drae4Go9QXTnNIVFrXATICH/RTA01PoefQfgg/Rty6G1TcAAAAASUVORK5CYII=" />
+										</defs>
+									</svg> Navštívit
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<a href="#" class="product">
+								<div class="product__img">
+									<img src="images/content/svetr.png" alt="">
+								</div>
+								<div class="fanshop__btn ">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M0 0h18.56v16H0z" />
+										<mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="16">
+											<path fill="url(#pattern1)" d="M0 0h18.56v16H0z" />
+										</mask>
+										<g mask="url(#a)">
+											<path fill="#fff" d="M0 0h18.56v16H0z" />
+										</g>
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<image id="image0_2_34" width="58" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAyCAYAAAAN6MhFAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAOqADAAQAAAABAAAAMgAAAACT2+A1AAAEo0lEQVRoBdVaSWgUQRRNjAsqEreDuBFcwAVRXC4qhLgvKK4HvRgMKAiCJ/GgXtSDBwWvelLUkxuI4r6hoh5U3MDgMiBGwT1uGKPxvXFqqPz+nemprpnpfHjp+q9//V+/U7+rqpPylpaWMkgdMA+ooJJD/uL+HWA30JTDNjm3kegawEX2oFNZe0EHPPK5jo99FfpFmQGO7v12Y6IvHF1Wot9Ex75F78ZEtwFngHSx5jmCGXnal8y8nDUWUfrB7o2wvQK9RnCJVPNJlAk8AkZbmfxCuzfww+IS2eTUzUcuCOMu0KcKLpFqvoleVLJoF3Wa79TtgUQ/Afaycg/6eOUBJIrKN1EO/gYw2cqCb7MDlp6U5m8M5C6wD2ju6DAq1qmdaDl0bh6SKmMwsHX51iiT0eo0qUlyXCv4wyXRW+j3nZ3bibzlOF0S5YnlWjtJksO8xB8uNcp+rFN5GNgM7hBvhshq8FvEvfnQnwjOqKfRGGkUXF8DudbsTbBZa/Vh8xx/uCaq1SmLPkWnIfJR4RvApRSeFGeOLc1QUjahtCcI7g/0y+Rcpi77PQDesWHJdLT5Bi6V9EFgmehtcI0ckGuiXDvlb7UvuLF0WiLRHnR62nI8romyL+tUCoOVSmYrgc8bzrVG2V9LlN+djhrn4spTjpT+ID5LMqN3FjzHWiU4W51pK2h/ATh10+KyBTR9eX0GDLWJBLWPYyxLzHjiTF36yE4N4zBB12x9ckxxE5UvpATl+X/9NAOKO3VZd++BUi4rJhf7yg9+rUoqzsuIjrkJ4FFIrl98IX0DbBkFZZJNoH0S0DYSNFsI9GIjI9xfHzGKda1Cu9rS2QyWlIcP0DvhQ8pCEPLj9gZpBH2cYmf63Rf2qRDbbcKO6hJpG7dG9adXVjZDPOFCqnL95J9M0ht5O6iPRPnFgV8DbSnWxoHvCFk2XDsDa7OPRH/CMZO1hfXIzUChhQ9U5hCsT8XIdWDaMlOM3+osZcCt1k9zP+5b1/jhU9xhlMx1Ja5fLY7HOCk1IKokmdErBd8N+iLBzRF6I/Tsts++F3cdNb4q0OB62tMQJbqeQNzFWmw5vzWbKFz2gBvFuIA22kEjHc5XonSm1kYBk9Jc86+CqvhM9DAi1KtRikPuR5jnYaF81ajx3x2NBQD/xFgs4QbhMcBNAr98qOI7UTVIEkifUzcJ+YSOwdc6agfgiWMZMAJoAm4CpwBOMZ8yBc64z+0BpIBjwCtAF7nLj6kvRf/PgBSeRIYA5mQS59oTfk7LANCbgI2A6lslw4xz8NNw/w8QJi9xoxKIE7MD+l8F2pL1uBmIESA0o4jco7aiZ+5tj+grbFzLI8RohE3ggfp6GQ1HYdj/xKHXSXCvGmYXxme/6oUZgGfNBg4UvhId0EZg+9ZAW3FoR+0/SPr2legn6ThE/xDCR6Wj9ucBo5X4SvQhvDa08qwrZ3U6MhulfzO8BT6lhBW9C1+b40XBZWcw4OLb9OmK/k9zxNmlxTAOfF23IshfZSAfwFUDPuIMg596QJODIDsBgTiF2OuOw9SpA8zO6Drae4Go9QXTnNIVFrXATICH/RTA01PoefQfgg/Rty6G1TcAAAAASUVORK5CYII=" />
+										</defs>
+									</svg> 899 Kč
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<a href="#" class="product">
+								<div class="product__img">
+									<img src="images/content/svetr.png" alt="">
+								</div>
+								<div class="fanshop__btn ">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M0 0h18.56v16H0z" />
+										<mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="16">
+											<path fill="url(#pattern1)" d="M0 0h18.56v16H0z" />
+										</mask>
+										<g mask="url(#a)">
+											<path fill="#fff" d="M0 0h18.56v16H0z" />
+										</g>
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<image id="image0_2_34" width="58" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAyCAYAAAAN6MhFAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAOqADAAQAAAABAAAAMgAAAACT2+A1AAAEo0lEQVRoBdVaSWgUQRRNjAsqEreDuBFcwAVRXC4qhLgvKK4HvRgMKAiCJ/GgXtSDBwWvelLUkxuI4r6hoh5U3MDgMiBGwT1uGKPxvXFqqPz+nemprpnpfHjp+q9//V+/U7+rqpPylpaWMkgdMA+ooJJD/uL+HWA30JTDNjm3kegawEX2oFNZe0EHPPK5jo99FfpFmQGO7v12Y6IvHF1Wot9Ex75F78ZEtwFngHSx5jmCGXnal8y8nDUWUfrB7o2wvQK9RnCJVPNJlAk8AkZbmfxCuzfww+IS2eTUzUcuCOMu0KcKLpFqvoleVLJoF3Wa79TtgUQ/Afaycg/6eOUBJIrKN1EO/gYw2cqCb7MDlp6U5m8M5C6wD2ju6DAq1qmdaDl0bh6SKmMwsHX51iiT0eo0qUlyXCv4wyXRW+j3nZ3bibzlOF0S5YnlWjtJksO8xB8uNcp+rFN5GNgM7hBvhshq8FvEvfnQnwjOqKfRGGkUXF8DudbsTbBZa/Vh8xx/uCaq1SmLPkWnIfJR4RvApRSeFGeOLc1QUjahtCcI7g/0y+Rcpi77PQDesWHJdLT5Bi6V9EFgmehtcI0ckGuiXDvlb7UvuLF0WiLRHnR62nI8romyL+tUCoOVSmYrgc8bzrVG2V9LlN+djhrn4spTjpT+ID5LMqN3FjzHWiU4W51pK2h/ATh10+KyBTR9eX0GDLWJBLWPYyxLzHjiTF36yE4N4zBB12x9ckxxE5UvpATl+X/9NAOKO3VZd++BUi4rJhf7yg9+rUoqzsuIjrkJ4FFIrl98IX0DbBkFZZJNoH0S0DYSNFsI9GIjI9xfHzGKda1Cu9rS2QyWlIcP0DvhQ8pCEPLj9gZpBH2cYmf63Rf2qRDbbcKO6hJpG7dG9adXVjZDPOFCqnL95J9M0ht5O6iPRPnFgV8DbSnWxoHvCFk2XDsDa7OPRH/CMZO1hfXIzUChhQ9U5hCsT8XIdWDaMlOM3+osZcCt1k9zP+5b1/jhU9xhlMx1Ja5fLY7HOCk1IKokmdErBd8N+iLBzRF6I/Tsts++F3cdNb4q0OB62tMQJbqeQNzFWmw5vzWbKFz2gBvFuIA22kEjHc5XonSm1kYBk9Jc86+CqvhM9DAi1KtRikPuR5jnYaF81ajx3x2NBQD/xFgs4QbhMcBNAr98qOI7UTVIEkifUzcJ+YSOwdc6agfgiWMZMAJoAm4CpwBOMZ8yBc64z+0BpIBjwCtAF7nLj6kvRf/PgBSeRIYA5mQS59oTfk7LANCbgI2A6lslw4xz8NNw/w8QJi9xoxKIE7MD+l8F2pL1uBmIESA0o4jco7aiZ+5tj+grbFzLI8RohE3ggfp6GQ1HYdj/xKHXSXCvGmYXxme/6oUZgGfNBg4UvhId0EZg+9ZAW3FoR+0/SPr2legn6ThE/xDCR6Wj9ucBo5X4SvQhvDa08qwrZ3U6MhulfzO8BT6lhBW9C1+b40XBZWcw4OLb9OmK/k9zxNmlxTAOfF23IshfZSAfwFUDPuIMg596QJODIDsBgTiF2OuOw9SpA8zO6Drae4Go9QXTnNIVFrXATICH/RTA01PoefQfgg/Rty6G1TcAAAAASUVORK5CYII=" />
+										</defs>
+									</svg> 899 Kč
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<a href="#" class="product">
+								<div class="product__img">
+									<img src="images/content/svetr.png" alt="">
+								</div>
+								<div class="fanshop__btn ">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M0 0h18.56v16H0z" />
+										<mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="16">
+											<path fill="url(#pattern1)" d="M0 0h18.56v16H0z" />
+										</mask>
+										<g mask="url(#a)">
+											<path fill="#fff" d="M0 0h18.56v16H0z" />
+										</g>
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+												<use xlink:href="#image0_2_34" transform="scale(.01724 .02)" />
+											</pattern>
+											<image id="image0_2_34" width="58" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAyCAYAAAAN6MhFAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAOqADAAQAAAABAAAAMgAAAACT2+A1AAAEo0lEQVRoBdVaSWgUQRRNjAsqEreDuBFcwAVRXC4qhLgvKK4HvRgMKAiCJ/GgXtSDBwWvelLUkxuI4r6hoh5U3MDgMiBGwT1uGKPxvXFqqPz+nemprpnpfHjp+q9//V+/U7+rqpPylpaWMkgdMA+ooJJD/uL+HWA30JTDNjm3kegawEX2oFNZe0EHPPK5jo99FfpFmQGO7v12Y6IvHF1Wot9Ex75F78ZEtwFngHSx5jmCGXnal8y8nDUWUfrB7o2wvQK9RnCJVPNJlAk8AkZbmfxCuzfww+IS2eTUzUcuCOMu0KcKLpFqvoleVLJoF3Wa79TtgUQ/Afaycg/6eOUBJIrKN1EO/gYw2cqCb7MDlp6U5m8M5C6wD2ju6DAq1qmdaDl0bh6SKmMwsHX51iiT0eo0qUlyXCv4wyXRW+j3nZ3bibzlOF0S5YnlWjtJksO8xB8uNcp+rFN5GNgM7hBvhshq8FvEvfnQnwjOqKfRGGkUXF8DudbsTbBZa/Vh8xx/uCaq1SmLPkWnIfJR4RvApRSeFGeOLc1QUjahtCcI7g/0y+Rcpi77PQDesWHJdLT5Bi6V9EFgmehtcI0ckGuiXDvlb7UvuLF0WiLRHnR62nI8romyL+tUCoOVSmYrgc8bzrVG2V9LlN+djhrn4spTjpT+ID5LMqN3FjzHWiU4W51pK2h/ATh10+KyBTR9eX0GDLWJBLWPYyxLzHjiTF36yE4N4zBB12x9ckxxE5UvpATl+X/9NAOKO3VZd++BUi4rJhf7yg9+rUoqzsuIjrkJ4FFIrl98IX0DbBkFZZJNoH0S0DYSNFsI9GIjI9xfHzGKda1Cu9rS2QyWlIcP0DvhQ8pCEPLj9gZpBH2cYmf63Rf2qRDbbcKO6hJpG7dG9adXVjZDPOFCqnL95J9M0ht5O6iPRPnFgV8DbSnWxoHvCFk2XDsDa7OPRH/CMZO1hfXIzUChhQ9U5hCsT8XIdWDaMlOM3+osZcCt1k9zP+5b1/jhU9xhlMx1Ja5fLY7HOCk1IKokmdErBd8N+iLBzRF6I/Tsts++F3cdNb4q0OB62tMQJbqeQNzFWmw5vzWbKFz2gBvFuIA22kEjHc5XonSm1kYBk9Jc86+CqvhM9DAi1KtRikPuR5jnYaF81ajx3x2NBQD/xFgs4QbhMcBNAr98qOI7UTVIEkifUzcJ+YSOwdc6agfgiWMZMAJoAm4CpwBOMZ8yBc64z+0BpIBjwCtAF7nLj6kvRf/PgBSeRIYA5mQS59oTfk7LANCbgI2A6lslw4xz8NNw/w8QJi9xoxKIE7MD+l8F2pL1uBmIESA0o4jco7aiZ+5tj+grbFzLI8RohE3ggfp6GQ1HYdj/xKHXSXCvGmYXxme/6oUZgGfNBg4UvhId0EZg+9ZAW3FoR+0/SPr2legn6ThE/xDCR6Wj9ucBo5X4SvQhvDa08qwrZ3U6MhulfzO8BT6lhBW9C1+b40XBZWcw4OLb9OmK/k9zxNmlxTAOfF23IshfZSAfwFUDPuIMg596QJODIDsBgTiF2OuOw9SpA8zO6Drae4Go9QXTnNIVFrXATICH/RTA01PoefQfgg/Rty6G1TcAAAAASUVORK5CYII=" />
+										</defs>
+									</svg> 899 Kč
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-news">
+				<div class="container">
+					<div class="js-slider slider-news__inner u-shadow-2">
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Kopečný má 28 let</h3>
+							<p class="p1">
+								Dnes slaví své 28. narozeniny naše čerstvá posila Miloš Kopečný. Přejeme všechno nejlepší, zejména pevné zdraví, hodně štěstí a úspěchů na hřišti i mimo něj!
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Oslavenec Tomáš Papuga</h3>
+							<p class="p1">
+								Lékař opavských fotbalistů Tomáš Papuga dnes slaví své 55. narozeniny! Přejeme všechno nejlepší, hodně štěstí, co nejméně výběhů na trávník nutných k ošetření hráčů, a hlavně pevné zdraví!
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Zdeněk Pospěch má 43 let</h3>
+							<p class="p1">
+								Dnes slaví své 43. narozeniny jeden z našich nejslavnějších odchovanců Zdeněk Pospěch! Někdejší vynikající fotbalista, jenž si zahrál i za českou reprezentaci, nyní dobrovolně pomáhá mládeži našeho klubu i při komunikaci s rodiči. Přejeme všechno nejlepší, pevné zdraví, hodně štěstí a radosti!
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Fanshop je dnes uzavřen</h3>
+							<p class="p1">
+								Fanshop je dnes uzavřen. Před Vánoci si budete moci klubové suvenýry opatřit ve středu 22. prosince a ve čtvrtek 23. prosince v době od 15 do 18 hodin. V novém roce bude fanshop otevřen v týdnu od 10. ledna.
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Kopečný má 28 let</h3>
+							<p class="p1">
+								Dnes slaví své 28. narozeniny naše čerstvá posila Miloš Kopečný. Přejeme všechno nejlepší, zejména pevné zdraví, hodně štěstí a úspěchů na hřišti i mimo něj!
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Oslavenec Tomáš Papuga</h3>
+							<p class="p1">
+								Lékař opavských fotbalistů Tomáš Papuga dnes slaví své 55. narozeniny! Přejeme všechno nejlepší, hodně štěstí, co nejméně výběhů na trávník nutných k ošetření hráčů, a hlavně pevné zdraví!
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Zdeněk Pospěch má 43 let</h3>
+							<p class="p1">
+								Dnes slaví své 43. narozeniny jeden z našich nejslavnějších odchovanců Zdeněk Pospěch! Někdejší vynikající fotbalista, jenž si zahrál i za českou reprezentaci, nyní dobrovolně pomáhá mládeži našeho klubu i při komunikaci s rodiči. Přejeme všechno nejlepší, pevné zdraví, hodně štěstí a radosti!
+								mládeži našeho klubu i při komunikaci s rodiči. Přejeme všechno nejlepší, pevné zdraví, hodně štěstí a radosti!
+								mládeži našeho klubu i při komunikaci s rodiči. Přejeme všechno nejlepší, pevné zdraví, hodně štěstí a radosti!
+								111
+								mládeži našeho klubu i při komunikaci s rodiči. Přejeme všechno nejlepší, pevné zdraví, hodně štěstí a radosti!
+								mládeži našeho klubu i při komunikaci s rodiči. Přejeme všechno nejlepší, pevné zdraví, hodně štěstí a radosti!
+							</p>
+						</div>
+						<div class="slider-news__item ">
+							<div class="date date--blue mb-4 date--small">16. 12. 2021</div>
+							<h3 class="h3 mb-2">Fanshop je dnes uzavřen</h3>
+							<p class="p1">
+								Fanshop je dnes uzavřen. Před Vánoci si budete moci klubové suvenýry opatřit ve středu 22. prosince a ve čtvrtek 23. prosince v době od 15 do 18 hodin. V novém roce bude fanshop otevřen v týdnu od 10. ledna.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hp-posts">
+				<div class="container">
+					<div class="row flex-wrap  hp-posts__inner">
+
+						<div class="col-12 col-sm-6 col-lg-4 pe-5 ps-5 hp-posts__col">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" alt="">
+									</div>
+									<div class="post__info">
+										<h3 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h3>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pe-5 ps-5 hp-posts__col">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" alt="">
+									</div>
+									<div class="post__info">
+										<h3 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h3>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pe-5 ps-5 hp-posts__col">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" alt="">
+									</div>
+									<div class="post__info">
+										<h3 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h3>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pe-5 ps-5 hp-posts__col">
+							<figure>
+								<a target="_blank" href="#" class=" d-block w-100 h-100">
+									<img class="w-100" src="https://via.placeholder.com/408x408" loading="lazy" alt="" />
+								</a>
+							</figure>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pe-5 ps-5 hp-posts__col">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" alt="">
+									</div>
+									<div class="post__info">
+										<h3 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h3>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pe-5 ps-5 hp-posts__col">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" alt="">
+									</div>
+									<div class="post__info">
+										<h3 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h3>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="pub">
+				<div class="container">
+					<div class="row  c-gallery-section ms-n5 me-n5">
+						<div class="col-xl-6 ps-5 pe-5">
+							<figure>
+								<a target="_blank" href="#" class=" d-block w-100 mb-4">
+									<img class="w-100" src="https://via.placeholder.com/480x120" loading="lazy" alt="" />
+								</a>
+							</figure>
+						</div>
+
+						<div class="col-xl-6 ps-5 pe-5">
+							<figure>
+								<a target="_blank" href="#" class=" d-block w-100 mb-4">
+									<img class="w-100" src="https://via.placeholder.com/480x120" loading="lazy" alt="" />
+								</a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class=" text-center py-2 mt-5">
+				<div class="container">
+					<ul class="row justify-content-center">
+						<li class="col-auto ps-5 pe-5">
+							<a target="_blank" href="#">
+								<img src="images/content/1.png" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="col-auto ps-5 pe-5">
+							<a target="_blank" href="#">
+								<img src="images/content/2.png" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="col-auto ps-5 pe-5">
+							<a target="_blank" href="#">
+								<img src="images/content/3.png" loading="lazy" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="container">
@@ -248,7 +773,7 @@
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=202203215431"></script>
+	<script defer src="js/scripts.js?v=20220324472"></script>
 </body>
 
 </html>

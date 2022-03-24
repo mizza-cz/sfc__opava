@@ -1,0 +1,72 @@
+.count-down {
+  position: relative;
+  z-index: 1;
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    width: 141px;
+    text-align: center;
+    color: var(--color-blue);
+  }
+}
+
+.timer {
+  display: flex;
+  padding-left: 20px;
+  max-width: 100%;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/ico/hriste.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 90px;
+    top: -18px;
+    left: -64px;
+  }
+  &__wrapper {
+    display: block;
+  }
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__value {
+    display: block;
+    color: var(--color-blue);
+  }
+  &__item {
+    text-align: center;
+    padding: 0 9px 0 15px;
+    & + & {
+      position: relative;
+      &::before {
+        content: ":";
+        width: 12px;
+        position: absolute;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        opacity: 0.2;
+        color: var(--color-blue);
+        left: 0;
+      }
+    }
+  }
+}
+#timer-seconds::after {
+  display: none;
+}
