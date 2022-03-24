@@ -7,7 +7,6 @@
   @include media-breakpoint-down(xxl) {
     padding: 0;
   }
-
   &__logo {
     display: flex;
     text-decoration: none;
@@ -42,12 +41,10 @@
       display: none;
     }
   }
-
   .navbar-expand-lg {
     @include media-breakpoint-only(lg) {
       flex-wrap: wrap;
     }
-
     .navbar-collapse {
       @include media-breakpoint-down(xl) {
         background-color: var(--color-light);
@@ -73,18 +70,15 @@
     }
   }
 }
-
 .collapse:not(.show) {
   display: flex;
 }
-
 .navbar {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
-
   &-nav {
     display: flex;
 
@@ -178,7 +172,6 @@
     background-color: var(--color-yellow);
   }
 }
-
 .dropdown {
   &-toggle {
     &::after {
@@ -237,7 +230,6 @@
   .navbar .nav-item .dropdown-menu {
     display: none;
   }
-
   .nav-item:hover .dropdown-menu {
     display: block;
   }

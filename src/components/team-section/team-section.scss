@@ -23,7 +23,6 @@
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     opacity: 0;
     z-index: 17;
-
     padding: 16px;
     &-img {
       width: 16px;
@@ -142,7 +141,6 @@
 .team-section__item:hover {
   .team-section__hover {
     transform: translateY(0);
-
     opacity: 1;
   }
   .team-section__info {

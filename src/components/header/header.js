@@ -1,5 +1,4 @@
 headerNavOpenerClick();
-
 function headerNavOpenerClick() {
   const bodyEl = document.querySelector('body');
   const headerNavOpener = document.querySelector('.js-header__opener');

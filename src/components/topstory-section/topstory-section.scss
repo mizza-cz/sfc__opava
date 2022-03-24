@@ -2,6 +2,7 @@
   max-width: 1920px;
   margin: 0 auto;
   .active {
+    max-width: 50%;
   }
   .h1 {
     color: var(--color-light);
@@ -29,7 +30,6 @@
     @include media-breakpoint-down(xxl) {
       height: 480px;
     }
-
     @include media-breakpoint-down(xl) {
       max-width: 50%;
     }
@@ -37,9 +37,8 @@
       max-width: 100% !important;
       height: 400px !important;
     }
-
     &:first-child {
-      max-width: 50%;
+      // max-width: 50%;
       @include media-breakpoint-down(xl) {
         max-width: 100%;
         order: -1;
