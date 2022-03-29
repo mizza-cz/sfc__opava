@@ -31,22 +31,29 @@
   * {
     cursor: not-allowed;
   }
-  .select2-container--default .select2-selection--single .select2-selection__rendered {
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
     color: var(--color-gray);
   }
   .select2-container {
     .select2-selection--single {
       background-color: var(--color-light);
       border-color: var(--color-gray);
+      b {
+        opacity: 0.2;
+      }
     }
   }
 }
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
   top: 2px;
   right: 24px;
   width: 10px;
   b {
-    background-image: url('../images/ico/chevron.svg');
+    background-image: url("../images/ico/chevron.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -87,8 +94,8 @@
   font-weight: 700;
   padding: 0;
 }
-/*! purgecss end ignore */
 .select2-container--default .select2-selection--single {
   border: 2px solid var(--color-blue);
   height: 33px;
 }
+/*! purgecss end ignore */

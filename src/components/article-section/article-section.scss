@@ -1,0 +1,126 @@
+.article-section {
+  margin-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 0;
+  }
+  &__bottom {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    text-transform: uppercase;
+    color: var(--color-gray2);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  &__fotogalerie {
+    margin-left: -16px;
+    margin-right: -16px;
+    &-hover {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: var(--color-light);
+      text-align: center;
+      transition: all 0.3s;
+    }
+    &-link {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 79, 159, 0.7) 0%,
+          rgba(2, 62, 122, 0.7) 100%
+        );
+      }
+    }
+    &-foto {
+      display: block;
+      aspect-ratio: 188/118;
+      margin-bottom: 8px;
+    }
+  }
+  .h1 {
+    color: var(--color-light);
+  }
+
+  &__img {
+    aspect-ratio: 861/535;
+    display: block;
+    position: relative;
+    min-height: 18.5rem;
+    width: 100%;
+    max-width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 7e-5) 28.06%,
+          rgba(0, 0, 0, 0.7) 99.51%
+        ),
+        rgba(0, 0, 0, 0.2);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__top {
+    position: relative;
+    &-info {
+      color: var(--color-light);
+      position: absolute;
+      bottom: 40px;
+      max-width: 566px;
+      padding: 0 16px;
+      margin: 0 auto;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+.share-menu {
+  display: flex;
+  padding-left: 6px;
+  li {
+    padding: 0 2px;
+  }
+}
+.share {
+  display: block;
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  svg path {
+    fill: var(--color-gray2);
+  }
+}

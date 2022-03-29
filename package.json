@@ -1,4 +1,5 @@
 {
+	
 	"name": "html-base",
 	"version": "1.0.0",
 	"description": "Gulp for Front-End Development",
@@ -36,6 +37,7 @@
 	},
 	"dependencies": {
 		"bootstrap": "^5.1.3",
+		"photoswipe": "^4.1.3",
 		"select2": "^4.1.0-rc.0",
 		"slick-carousel": "^1.8.1",
 		"smooth-scroll": "^16.1.3",

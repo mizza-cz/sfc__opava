@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>05.0_Článek-Zápas - Slezský FC Opava</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202203292175" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202203292175" />
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+</head>
+
+<body>
+	<div class="base">
+		<header class="header w-100">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg">
+					<a class="header__logo" href="">
+						<div class="header__logo-img">
+							<img src="images/content/logo.png" loading="lazy" alt="logo" />
+						</div>
+						<div class="h2">Slezský FC Opava</div>
+					</a>
+					<button class="c-header__opener js-header__opener" type="button">
+						<span></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="klub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Klub
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="klub">
+									<li><a class="dropdown-item" href="#">Profil klubu</a></li>
+									<li><a class="dropdown-item" href="#">Vedení klubu</a></li>
+									<li><a class="dropdown-item" href="#">Kontakty</a></li>
+									<li><a class="dropdown-item" href="#">Stadion</a></li>
+									<li><a class="dropdown-item" href="#">Další sportoviště</a></li>
+									<li><a class="dropdown-item" href="#">Historie</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="a-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									A-tým
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="a-tym">
+									<li><a class="dropdown-item" href="#">Soupiska</a></li>
+									<li><a class="dropdown-item" href="#">Realizační tým</a></li>
+									<li><a class="dropdown-item" href="#">Zápasy</a></li>
+									<li><a class="dropdown-item" href="#">Tabulka</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="b-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									B-tým
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="b-tym">
+									<li><a class="dropdown-item" href="#">Soupiska</a></li>
+									<li><a class="dropdown-item" href="#">Realizační tým</a></li>
+									<li><a class="dropdown-item" href="#">Zápasy</a></li>
+									<li><a class="dropdown-item" href="#">Tabulka</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="mladez" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Mládež
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="mladez">
+									<li><a class="dropdown-item" href="#">Základní informace</a></li>
+									<li><a class="dropdown-item" href="#">Kontakty</a></li>
+									<li><a class="dropdown-item" href="#">Výchova mládeže</a></li>
+									<li><a class="dropdown-item" href="#">Sportovní centrum</a></li>
+									<li><a class="dropdown-item" href="#">Sportovní třídy</a></li>
+									<li><a class="dropdown-item" href="#">Fotbalová školička</a></li>
+									<li><a class="dropdown-item" href="#">Nábor</a></li>
+									<li><a class="dropdown-item" href="#">Spolupráce s SDG</a></li>
+									<li><a class="dropdown-item" href="#">ZŠ Rabasova</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+									<li class="submenu  position-relative">
+										<a class="dropdown-item dropdown-toggle">
+											Spolupracují školy
+										</a>
+										<ul class="dropdown-submenu submenu">
+											<li><a href="#" class="dropdown-item">Gymnázium Jateční</a></li>
+											<li><a href="#" class="dropdown-item">Gymnázium a SOŠ Stavbařů</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="fanzona" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Fanzóna
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="fanzona">
+									<li><a class="dropdown-item" href="#">Zpravodaje online</a></li>
+									<li><a class="dropdown-item" href="#">Hráč utkání</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Média
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="vstupenky" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Vstupenky
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="vstupenky">
+									<li><a class="dropdown-item" href="#">Permanentky</a></li>
+									<li><a class="dropdown-item" href="#">Vstupenky</a></li>
+									<li><a class="dropdown-item" href="#">On-line prodej</a></li>
+									<li><a class="dropdown-item" href="#">VIP sedadlo</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Partneři
+								</a>
+							</li>
+						</ul>
+						<div class="social-mob">
+							<ul class="social">
+								<li class="social__item">
+									<a target="_blank" class="social__link " href="#">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 0C6.716 0 0 6.744 0 15.063c0 7.46 5.408 13.64 12.498 14.836V18.205H8.88v-4.208h3.618v-3.103c0-3.6 2.19-5.562 5.39-5.562 1.531 0 2.848.114 3.23.165V9.26l-2.219.001c-1.739 0-2.074.83-2.074 2.048v2.686h4.15l-.542 4.208h-3.608V30C24.246 29.093 30 22.756 30 15.059 30 6.744 23.284 0 15 0z" fill="#fff" />
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link " href="#">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="#004f9f" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm21.859-2.86c0-.149-.004-.297-.01-.445a6.994 6.994 0 001.717-1.783 6.866 6.866 0 01-1.977.543 3.456 3.456 0 001.514-1.905 6.906 6.906 0 01-2.186.836 3.444 3.444 0 00-5.867 3.14 9.775 9.775 0 01-7.097-3.598 3.44 3.44 0 001.066 4.596 3.419 3.419 0 01-1.56-.43v.044a3.444 3.444 0 002.762 3.375 3.442 3.442 0 01-1.555.06 3.447 3.447 0 003.217 2.39 6.908 6.908 0 01-4.276 1.474c-.278 0-.552-.015-.822-.047a9.746 9.746 0 005.278 1.546c6.333 0 9.796-5.246 9.796-9.796z" fill="#fff" />
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link " href="#">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17.871 15a2.871 2.871 0 11-5.742 0 2.871 2.871 0 015.742 0z" fill="#fff" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.714 9.92a2.669 2.669 0 00-.644-.99 2.666 2.666 0 00-.99-.644c-.304-.118-.76-.259-1.6-.297-.908-.041-1.18-.05-3.48-.05s-2.572.008-3.48.05c-.84.038-1.297.179-1.6.297a2.665 2.665 0 00-.99.644 2.67 2.67 0 00-.645.99c-.118.304-.258.76-.296 1.6-.042.908-.05 1.18-.05 3.48s.008 2.572.05 3.48c.038.84.178 1.297.296 1.6.138.374.358.713.645.99.277.287.616.507.99.645.303.118.76.258 1.6.296.908.042 1.18.05 3.48.05s2.572-.008 3.48-.05c.84-.038 1.296-.178 1.6-.296a2.852 2.852 0 001.634-1.635c.118-.303.259-.76.297-1.6.041-.908.05-1.18.05-3.48s-.009-2.572-.05-3.48c-.038-.84-.178-1.296-.297-1.6zM15 19.423a4.423 4.423 0 110-8.846 4.423 4.423 0 010 8.846zm3.564-9.02a1.034 1.034 0 102.067 0 1.034 1.034 0 00-2.067 0z" fill="#fff" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.161 5.642c.213-.548.359-1.174.4-2.09.042-.92.052-1.213.052-3.552 0-2.34-.01-2.633-.051-3.551-.042-.917-.188-1.543-.401-2.09a4.222 4.222 0 00-.993-1.526 4.222 4.222 0 00-1.526-.994c-.548-.213-1.174-.358-2.09-.4-.92-.042-1.213-.052-3.552-.052-2.34 0-2.633.01-3.551.052-.917.042-1.543.187-2.09.4a4.219 4.219 0 00-1.526.994 4.22 4.22 0 00-.994 1.525c-.213.548-.359 1.174-.4 2.09-.042.92-.052 1.213-.052 3.552 0 2.34.01 2.633.052 3.551.042.917.187 1.543.4 2.09a4.22 4.22 0 00.994 1.526c.43.439.95.778 1.525.994.548.213 1.174.358 2.09.4.92.042 1.213.052 3.552.052 2.34 0 2.633-.01 3.551-.052.917-.042 1.543-.187 2.09-.4a4.404 4.404 0 002.52-2.52z" fill="#fff" />
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link " href="#">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.132 17.81l4.88-2.81-4.88-2.81v5.62z" fill="#fff" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.987 4.524c.386-1.467.386-4.509.386-4.509s.015-3.057-.386-4.524a2.349 2.349 0 00-1.652-1.652C20.867 8.437 15 8.437 15 8.437s-5.868 0-7.335.387a2.396 2.396 0 00-1.652 1.667C5.627 11.958 5.627 15 5.627 15s0 3.057.386 4.509c.216.803.85 1.436 1.652 1.652 1.483.401 7.335.401 7.335.401s5.868 0 7.334-.386a2.349 2.349 0 001.653-1.652z" fill="#fff" />
+										</svg> </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="social">
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 0C6.716 0 0 6.744 0 15.063c0 7.46 5.408 13.64 12.498 14.836V18.205H8.88v-4.208h3.618v-3.103c0-3.6 2.19-5.562 5.39-5.562 1.531 0 2.848.114 3.23.165V9.26l-2.219.001c-1.739 0-2.074.83-2.074 2.048v2.686h4.15l-.542 4.208h-3.608V30C24.246 29.093 30 22.756 30 15.059 30 6.744 23.284 0 15 0z" fill="#fff" />
+								</svg> </a>
+						</li>
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="#004f9f" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm21.859-2.86c0-.149-.004-.297-.01-.445a6.994 6.994 0 001.717-1.783 6.866 6.866 0 01-1.977.543 3.456 3.456 0 001.514-1.905 6.906 6.906 0 01-2.186.836 3.444 3.444 0 00-5.867 3.14 9.775 9.775 0 01-7.097-3.598 3.44 3.44 0 001.066 4.596 3.419 3.419 0 01-1.56-.43v.044a3.444 3.444 0 002.762 3.375 3.442 3.442 0 01-1.555.06 3.447 3.447 0 003.217 2.39 6.908 6.908 0 01-4.276 1.474c-.278 0-.552-.015-.822-.047a9.746 9.746 0 005.278 1.546c6.333 0 9.796-5.246 9.796-9.796z" fill="#fff" />
+								</svg> </a>
+						</li>
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.871 15a2.871 2.871 0 11-5.742 0 2.871 2.871 0 015.742 0z" fill="#fff" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M21.714 9.92a2.669 2.669 0 00-.644-.99 2.666 2.666 0 00-.99-.644c-.304-.118-.76-.259-1.6-.297-.908-.041-1.18-.05-3.48-.05s-2.572.008-3.48.05c-.84.038-1.297.179-1.6.297a2.665 2.665 0 00-.99.644 2.67 2.67 0 00-.645.99c-.118.304-.258.76-.296 1.6-.042.908-.05 1.18-.05 3.48s.008 2.572.05 3.48c.038.84.178 1.297.296 1.6.138.374.358.713.645.99.277.287.616.507.99.645.303.118.76.258 1.6.296.908.042 1.18.05 3.48.05s2.572-.008 3.48-.05c.84-.038 1.296-.178 1.6-.296a2.852 2.852 0 001.634-1.635c.118-.303.259-.76.297-1.6.041-.908.05-1.18.05-3.48s-.009-2.572-.05-3.48c-.038-.84-.178-1.296-.297-1.6zM15 19.423a4.423 4.423 0 110-8.846 4.423 4.423 0 010 8.846zm3.564-9.02a1.034 1.034 0 102.067 0 1.034 1.034 0 00-2.067 0z" fill="#fff" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.161 5.642c.213-.548.359-1.174.4-2.09.042-.92.052-1.213.052-3.552 0-2.34-.01-2.633-.051-3.551-.042-.917-.188-1.543-.401-2.09a4.222 4.222 0 00-.993-1.526 4.222 4.222 0 00-1.526-.994c-.548-.213-1.174-.358-2.09-.4-.92-.042-1.213-.052-3.552-.052-2.34 0-2.633.01-3.551.052-.917.042-1.543.187-2.09.4a4.219 4.219 0 00-1.526.994 4.22 4.22 0 00-.994 1.525c-.213.548-.359 1.174-.4 2.09-.042.92-.052 1.213-.052 3.552 0 2.34.01 2.633.052 3.551.042.917.187 1.543.4 2.09a4.22 4.22 0 00.994 1.526c.43.439.95.778 1.525.994.548.213 1.174.358 2.09.4.92.042 1.213.052 3.552.052 2.34 0 2.633-.01 3.551-.052.917-.042 1.543-.187 2.09-.4a4.404 4.404 0 002.52-2.52z" fill="#fff" />
+								</svg> </a>
+						</li>
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.132 17.81l4.88-2.81-4.88-2.81v5.62z" fill="#fff" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.987 4.524c.386-1.467.386-4.509.386-4.509s.015-3.057-.386-4.524a2.349 2.349 0 00-1.652-1.652C20.867 8.437 15 8.437 15 8.437s-5.868 0-7.335.387a2.396 2.396 0 00-1.652 1.667C5.627 11.958 5.627 15 5.627 15s0 3.057.386 4.509c.216.803.85 1.436 1.652 1.652 1.483.401 7.335.401 7.335.401s5.868 0 7.334-.386a2.349 2.349 0 001.653-1.652z" fill="#fff" />
+								</svg> </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<div class="container">
+				<div class="row mb-10">
+					<article class="post-matches-section col-xl-8">
+						<div class="article-section__top">
+							<figure class="article-section__img">
+								<img src="images/content/2.jpg" loading="lazy" alt="">
+							</figure>
+							<div class="article-section__top-info">
+								<h1 class="h1 mb-6">
+									West po porážce s Brnem: Měli jsme rozhodnout v první půli
+								</h1>
+								<div class="align-items-center d-flex justify-content-center">
+									<div class="px-4">
+										<div class="date date--blue">16. 12. 2021</div>
+									</div>
+									<div class="px-4">
+										<div class="h6">Redakce</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="o-wrapper">
+							<div class="game-report">
+								<div class="game-scorebox">
+									<div class="team team-left">
+										<div class="team__name">
+											Slezský FC Opava
+										</div>
+										<img src="images/ico/logo.svg" loading="lazy" alt="">
+									</div>
+									<div class="score">
+										3:3
+										<span>(1:2)</span>
+									</div>
+									<div class="team team-right">
+										<img src="images/content/team-2.png" loading="lazy" alt="">
+										<div class="team__name">
+											FC Sellier&Bellot Vlašim
+										</div>
+									</div>
+								</div>
+								<div class="o-content p-6 bg-white pb-0">
+									<h4 class="h4">Statistiky</h4>
+									<p class="p1">
+										<strong>Branky:</strong> 11. Helešic, 54. Rychlý, 78. Darmovzal – 30. Blecha, 41. Křišťan, 90+4. Alijagič. <strong>Rozhodčí:</strong> Hanousek – Mikeska, Bureš. <strong>ŽK:</strong> Celba, Digaňa – Svoboda, Hošek, Alijagič. <strong>ČK:</strong> 29. Celba. <strong>Diváci:</strong> 1 233.
+									</p>
+									<div class="row game-report__teams mt-6">
+										<div class="col-12 col-sm-6 p-6 game-report__team">
+											<div class="d-flex align-items-center mb-n4">
+												<div class="game-report__team-logo">
+													<img src="images/ico/logo.svg" loading="lazy" alt="">
+												</div>
+												<h4 class="h4">Slezský FC Opava</h4>
+											</div>
+											<p class="p1">
+												Digaňa – Celba, Helebrand (77. Večerka), Hnaníček, Janoščín – Didiba, Tiéhi – Šigut (70. Pikul), Holík (46. Rychlý), Helešic (77. Kadlec) – Kramář (64. Darmovzal).
+											</p>
+											<p class="p1">
+												<strong>Trenér: </strong>Roman West.
+											</p>
+										</div>
+										<div class="col-12 col-sm-6 p-6 game-report__team">
+											<div class="d-flex align-items-center mb-n4">
+												<div class="game-report__team-logo">
+													<img src="images/content/team-2.png" loading="lazy" alt="">
+												</div>
+												<h4 class="h4">FC Sellier&Bellot Vlašim</h4>
+											</div>
+											<p class="p1">
+												Vágner – Hošek (84. Janda), Broukal, Breda, Svoboda – Blecha, Rigo (64. Alijagič) – Višinský, Křišťan, Zinhasovič (84. Kozel) – Zlatohlávek (77. Červenka).
+											</p>
+											<p class="p1">
+												<strong>Trenér: </strong>Martin Hyský.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="o-content mt-n5">
+								<div class="row js-gallery gx-2 article-section__fotogalerie mb-5">
+									<div class="col-md-3 col-6">
+										<figure>
+											<a class="article-section__fotogalerie-foto" href="https://via.placeholder.com/1024x1024" data-size="1024x1024">
+												<img src="https://via.placeholder.com/188x118" loading="lazy" alt="" />
+											</a>
+										</figure>
+									</div>
+									<div class="col-md-3 col-6">
+										<figure>
+											<a class="article-section__fotogalerie-foto" href="https://via.placeholder.com/1024x1024" data-size="1024x1024">
+												<img src="https://via.placeholder.com/188x118" loading="lazy" alt="" />
+											</a>
+										</figure>
+									</div>
+									<div class="col-md-3 col-6">
+										<figure>
+											<a class="article-section__fotogalerie-foto" href="https://via.placeholder.com/1024x1024" data-size="1024x1024">
+												<img src="https://via.placeholder.com/188x118" loading="lazy" alt="" />
+											</a>
+										</figure>
+									</div>
+									<div class="col-md-3 col-6">
+										<figure>
+											<a class="article-section__fotogalerie-foto article-section__fotogalerie-link" href="https://via.placeholder.com/1024x1024" data-size="1024x1024">
+												<img src="https://via.placeholder.com/188x118" loading="lazy" alt="" />
+												<span class="article-section__fotogalerie-hover">+21</span>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<p class="perex">
+									<strong>
+										Opava – Úvodní zápas nového soutěžního ročníku s Vlašimí byl pořádně hektický. Slezský FC vedl po trefě Matěje Helešice, Středočeši ovšem skóre ještě do první půle otočili. Opavští, kteří hráli přes hodinu v deseti, získali náskok zpět, jenže výběr kouče Hyského v nastavení srovnal na konečných 3:3.
+									</strong>
+								</p>
+								<p>
+									Slezané, kteří do utkání nastoupili v totožné sestavě jako v generálce s polským GKS Tychy, začali skvěle. Hned v úvodu mohli jít do vedení po nádherné akci, kdy Šigut zpětnou přihrávkou poslal míč do vápna, Holík ho pustil na Helešice, jehož ránu zastavilo břevno.
+								</p>
+								<p>
+									Opavské křídlo si náladu zlepšilo o chvilku později. Holík byl faulován v šestnáctce a nařízenou penaltu bezpečně proměnil. Krátce nato mohl přidat druhý zásah Tiéhi, ale z dobré pozice napálil balon těsně vedle pravého horního rohu brány.
+								</p>
+								<p>
+									Pak přišla pro domácí studená sprcha. Celba ve vápně fauloval, a protože už jednu žlutou kartu měl, ve 29. minutě byl vyloučen. Blecha pokutový proměnil a bylo srovnáno, to ale nebylo vše. V závěru první půle se do skákavého míče opřel Křišťan a ranou zpoza šestnáctky otočil skóre – 1:2.
+								</p>
+								<p>
+									Opavští se ocitli ve složité situaci, ale i přes početní nevýhodu byli aktivní směrem dopředu. V 54. minutě byli za svou snahu odměněni vyrovnávací brankou, když Helešicovu ránu vyrazil Vágner přímo do míst, kde číhal Rychlý, jenž propasíroval míč do sítě – 2:2.
+								</p>
+								<p>
+									Městské sady byly na nohou, a pak to přišlo. Střídající Darmovzal nebyl na hřišti ještě ani čtvrthodinku, pak si navedl míč na osu hřiště a povedenou střelou strhl vedení zpátky na stranu Opavy.
+								</p>
+								<p>
+									Pojistku mohl přidat Kadlec, ale přečíslení nevyřešil dobře a nepřesnou střelou minul vlašimskou bránu. Když už se zdálo, že Slezané těsný náskok uhájí, udeřil tým zpod Blaníku. Po nedůrazu ve vápně se míč dostal Alijagičovi, jenž brankou na 3:3 rozhodl o dělbě bodů.
+								</p>
+								<q>
+									<div class="comment">
+										<div class="comment__header">
+											<div class="comment__img">
+												<img src="images/ico/logo.svg" alt="">
+											</div>
+											<h4 class="h4">
+												Roman West
+												<span>
+													trenér Slezského FC
+												</span>
+											</h4>
+										</div>
+										<p>
+											„Utkání jsme začali fantasticky. Do patnácté minuty jsme měli tři, čtyři brankové šance, dali jsme břevno, ale pak jsme se dostali do vedení. Celý úvod zápasu byl dobrý, zhruba do třicáté minuty jsme soupeře de facto do ničeho nepustili. Pak zničehonic přišla penalta, ještě k tomu červená karta a vyrovnání na 1:1. Přišel útlum, soupeř skóre otočil a vedl. Bylo to pro nás těžké, ale nakonec jsme heroickým výkonem o deseti proti silnému a velmi dobře kombinačně hrajícímu soupeři podařilo otočit výsledek na 3:2. Zápas se zlomil dvěma šancemi Kadlece, kdy jsme měli dát gól na 4:2 a byla by to úplná pohádka. Bohužel jsme je neproměnili. Dostat po takovém výkonu doma gól v 90+4. minutě je velmi smutné. Pro lidi to snad byl dobrý úvodní zápas. Viděli šest branek, obraty, plno šancí, zkrátka zajímavé utkání. Remízu beru sportovně, protože v poločase, kdy to bylo 1:2 a hráli jsme o deseti, bychom bod určitě brali. Jsem rád, že to kluci ve druhé půli nevzdali a chtěli se zápasem něco udělat. Nakonec to byl pěkný zápas, ale když jste po takovém výkonu pět vteřin od vítězství, je to škoda a mrzí to.“
+										</p>
+									</div>
+									<div class="comment">
+										<div class="comment__header">
+											<div class="comment__img">
+												<img src="images/content/team-2.png" alt="">
+											</div>
+											<h4 class="h4">
+												Martin Hyský
+												<span>
+													trenér FC Sellier&Bellot Vlašim
+												</span>
+											</h4>
+										</div>
+										<p>
+											„Na úvodní kolo mělo utkání velmi dobré parametry. Hrálo se ve vysoké intenzitě. Do zápasu jsme nevstoupili moc dobře, Opava nás zatlačila, měla tam břevno. Pak penaltu, po které šla do vedení. Následně jsme se dostali do hry, začali jsme kombinovat. Dali jsme vyrovnávací gól, navíc z toho byla červená pro domácí. Do konce poločasu jsme to dohráli dobře. Zápas jsme měli ve svých rukách, ale druhá půle šla bohužel jiným směrem, než jsme si představovali. Nedokázali jsme pořádně udržet balon. Opava to zjednodušila a byla velmi dobře soubojově připravená. Dostali jsme dva zbytečné góly, takže se to otočilo všechno proti nám. Pomohla nám střídání a věřil jsem do poslední vteřiny, ale že to padne v nastavení po takhle krásné akci, jsem nečekal. Kluky musím pochválit za trpělivost.“
+										</p>
+									</div>
+								</q>
+							</div>
+							<div class="article-section__bottom mt-4 ">
+								<span>sdílet</span>
+								<ul class="share-menu">
+									<li>
+										<a href="https://www.facebook.com/sharer.php?http://localhost:3000/05.0_clanek.html" class="customer share">
+											<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0C6.716 0 0 6.744 0 15.063c0 7.46 5.408 13.64 12.498 14.836V18.205H8.88v-4.208h3.618v-3.103c0-3.6 2.19-5.562 5.39-5.562 1.531 0 2.848.114 3.23.165V9.26l-2.219.001c-1.739 0-2.074.83-2.074 2.048v2.686h4.15l-.542 4.208h-3.608V30C24.246 29.093 30 22.756 30 15.059 30 6.744 23.284 0 15 0z" fill="#fff" />
+											</svg> </a>
+									</li>
+									<li>
+										<a href="https://twitter.com/share?http://localhost:3000/05.0_clanek.html" class="customer share">
+											<svg width="30" height="30" viewBox="0 0 30 30" fill="#004f9f" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm21.859-2.86c0-.149-.004-.297-.01-.445a6.994 6.994 0 001.717-1.783 6.866 6.866 0 01-1.977.543 3.456 3.456 0 001.514-1.905 6.906 6.906 0 01-2.186.836 3.444 3.444 0 00-5.867 3.14 9.775 9.775 0 01-7.097-3.598 3.44 3.44 0 001.066 4.596 3.419 3.419 0 01-1.56-.43v.044a3.444 3.444 0 002.762 3.375 3.442 3.442 0 01-1.555.06 3.447 3.447 0 003.217 2.39 6.908 6.908 0 01-4.276 1.474c-.278 0-.552-.015-.822-.047a9.746 9.746 0 005.278 1.546c6.333 0 9.796-5.246 9.796-9.796z" fill="#fff" />
+											</svg> </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+					<aside class="aside col-xl-4 gy-10">
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" loading="lazy" alt="">
+									</div>
+									<div class="post__info">
+										<h2 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h2>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" loading="lazy" alt="">
+									</div>
+									<div class="post__info">
+										<h2 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h2>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" loading="lazy" alt="">
+									</div>
+									<div class="post__info">
+										<h2 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h2>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/3.jpg" loading="lazy" alt="">
+									</div>
+									<div class="post__info">
+										<h2 class="h3">
+											Potřebujeme ustálit kádr, říká Roman West. Jak hodnotí podzim?
+										</h2>
+										<div class="date date--small date--blue">16. 12. 2021</div>
+									</div>
+								</a>
+
+							</article>
+						</div>
+						<div class="aside__ban">
+							<figure>
+								<a target="_blank" href="#" class=" d-block w-100 mb-4">
+									<img class="w-100" src="https://via.placeholder.com/408x200" loading="lazy" alt="" />
+								</a>
+							</figure>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<section class="pub">
+				<div class="container">
+					<div class="row  c-gallery-section ms-n5 me-n5">
+						<div class="col-xl-6 ps-5 pe-5">
+							<figure>
+								<a target="_blank" href="#" class=" d-block w-100 mb-4">
+									<img class="w-100" src="https://via.placeholder.com/480x120" loading="lazy" alt="" />
+								</a>
+							</figure>
+						</div>
+						<div class="col-xl-6 ps-5 pe-5">
+							<figure>
+								<a target="_blank" href="#" class=" d-block w-100 mb-4">
+									<img class="w-100" src="https://via.placeholder.com/480x120" loading="lazy" alt="" />
+								</a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class=" text-center py-2 mt-5">
+				<div class="container">
+					<ul class="row justify-content-center">
+						<li class="col-auto ps-5 pe-5">
+							<a target="_blank" href="#">
+								<img src="images/content/1.png" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="col-auto ps-5 pe-5">
+							<a target="_blank" href="#">
+								<img src="images/content/2.png" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="col-auto ps-5 pe-5">
+							<a target="_blank" href="#">
+								<img src="images/content/3.png" loading="lazy" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row d-flex justify-content-between align-items-center h-100 position-relative">
+					<a href="#" class="footer__logo">
+						<img src="images/ico/logo.svg" loading="lazy" alt="" />
+					</a>
+					<p class="p2 col-lg-6">
+						<strong>
+							&copy; 2019 – 2022 Slezský FC Opava & <a href="#">eSports.cz,</a> s.r.o.
+						</strong>
+					</p>
+					<div class="footer__social align-items-center  justify-content-center col-lg-6 d-flex justify-content-md-end">
+						<a href="#" class="p2">
+							Nastavení cookies
+						</a>
+						<ul class="social">
+							<li class="social__item">
+								<a target="_blank" class="social__link " href="#">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15 0C6.716 0 0 6.744 0 15.063c0 7.46 5.408 13.64 12.498 14.836V18.205H8.88v-4.208h3.618v-3.103c0-3.6 2.19-5.562 5.39-5.562 1.531 0 2.848.114 3.23.165V9.26l-2.219.001c-1.739 0-2.074.83-2.074 2.048v2.686h4.15l-.542 4.208h-3.608V30C24.246 29.093 30 22.756 30 15.059 30 6.744 23.284 0 15 0z" fill="#fff" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link " href="#">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="#004f9f" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm21.859-2.86c0-.149-.004-.297-.01-.445a6.994 6.994 0 001.717-1.783 6.866 6.866 0 01-1.977.543 3.456 3.456 0 001.514-1.905 6.906 6.906 0 01-2.186.836 3.444 3.444 0 00-5.867 3.14 9.775 9.775 0 01-7.097-3.598 3.44 3.44 0 001.066 4.596 3.419 3.419 0 01-1.56-.43v.044a3.444 3.444 0 002.762 3.375 3.442 3.442 0 01-1.555.06 3.447 3.447 0 003.217 2.39 6.908 6.908 0 01-4.276 1.474c-.278 0-.552-.015-.822-.047a9.746 9.746 0 005.278 1.546c6.333 0 9.796-5.246 9.796-9.796z" fill="#fff" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link " href="#">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.871 15a2.871 2.871 0 11-5.742 0 2.871 2.871 0 015.742 0z" fill="#fff" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M21.714 9.92a2.669 2.669 0 00-.644-.99 2.666 2.666 0 00-.99-.644c-.304-.118-.76-.259-1.6-.297-.908-.041-1.18-.05-3.48-.05s-2.572.008-3.48.05c-.84.038-1.297.179-1.6.297a2.665 2.665 0 00-.99.644 2.67 2.67 0 00-.645.99c-.118.304-.258.76-.296 1.6-.042.908-.05 1.18-.05 3.48s.008 2.572.05 3.48c.038.84.178 1.297.296 1.6.138.374.358.713.645.99.277.287.616.507.99.645.303.118.76.258 1.6.296.908.042 1.18.05 3.48.05s2.572-.008 3.48-.05c.84-.038 1.296-.178 1.6-.296a2.852 2.852 0 001.634-1.635c.118-.303.259-.76.297-1.6.041-.908.05-1.18.05-3.48s-.009-2.572-.05-3.48c-.038-.84-.178-1.296-.297-1.6zM15 19.423a4.423 4.423 0 110-8.846 4.423 4.423 0 010 8.846zm3.564-9.02a1.034 1.034 0 102.067 0 1.034 1.034 0 00-2.067 0z" fill="#fff" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.161 5.642c.213-.548.359-1.174.4-2.09.042-.92.052-1.213.052-3.552 0-2.34-.01-2.633-.051-3.551-.042-.917-.188-1.543-.401-2.09a4.222 4.222 0 00-.993-1.526 4.222 4.222 0 00-1.526-.994c-.548-.213-1.174-.358-2.09-.4-.92-.042-1.213-.052-3.552-.052-2.34 0-2.633.01-3.551.052-.917.042-1.543.187-2.09.4a4.219 4.219 0 00-1.526.994 4.22 4.22 0 00-.994 1.525c-.213.548-.359 1.174-.4 2.09-.042.92-.052 1.213-.052 3.552 0 2.34.01 2.633.052 3.551.042.917.187 1.543.4 2.09a4.22 4.22 0 00.994 1.526c.43.439.95.778 1.525.994.548.213 1.174.358 2.09.4.92.042 1.213.052 3.552.052 2.34 0 2.633-.01 3.551-.052.917-.042 1.543-.187 2.09-.4a4.404 4.404 0 002.52-2.52z" fill="#fff" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link " href="#">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.132 17.81l4.88-2.81-4.88-2.81v5.62z" fill="#fff" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.987 4.524c.386-1.467.386-4.509.386-4.509s.015-3.057-.386-4.524a2.349 2.349 0 00-1.652-1.652C20.867 8.437 15 8.437 15 8.437s-5.868 0-7.335.387a2.396 2.396 0 00-1.652 1.667C5.627 11.958 5.627 15 5.627 15s0 3.057.386 4.509c.216.803.85 1.436 1.652 1.652 1.483.401 7.335.401 7.335.401s5.868 0 7.334-.386a2.349 2.349 0 001.653-1.652z" fill="#fff" />
+									</svg> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js?v=202203284272"></script>
+</body>
+
+</html>

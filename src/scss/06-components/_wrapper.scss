@@ -1,0 +1,10 @@
+.o-wrapper {
+  background-color: var(--color-light);
+  padding: 40px 56px;
+  @include media-breakpoint-down(lg) {
+    padding: 32px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 16px !important;
+  }
+}
