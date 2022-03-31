@@ -1,0 +1,16 @@
+input {
+  border-radius: 16px;
+  border: 2px solid var(--color-gray);
+  padding: 0 24px;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-dark);
+  &::placeholder {
+    text-transform: uppercase;
+    color: var(--color-gray);
+    font-weight: 700;
+  }
+  &:focus {
+    outline-color: var(--color-blue);
+  }
+}

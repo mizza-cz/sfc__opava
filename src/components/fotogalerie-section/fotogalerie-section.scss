@@ -7,3 +7,70 @@
     }
   }
 }
+.fotogalerie-section {
+  &__number {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    z-index: 3;
+    span {
+      position: relative;
+      font-weight: 700;
+      font-size: 16px;
+      padding-right: 24px;
+      color: var(--color-light);
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-image: url("../images/ico/gallery.svg");
+      }
+    }
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 32px;
+    padding: 0 24px;
+    z-index: 3;
+    .date {
+      margin: 0 auto;
+    }
+    .h3 {
+      color: var(--color-light);
+      margin-bottom: 14px;
+    }
+  }
+  figure a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 8e-5) 28.06%,
+          rgba(0, 0, 0, 0.8) 99.51%
+        ),
+        rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 100%;
+      display: block;
+      left: 0;
+      top: 0;
+    }
+  }
+}
