@@ -7,14 +7,12 @@
     text-transform: uppercase;
     margin: 32px 0;
   }
-  &__inner {
-    a {
-      width: 100%;
-      text-align: center;
-      display: block;
-    }
-    img {
-      display: inline-block;
-    }
+  a {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  img {
+    display: inline-block;
   }
 }
