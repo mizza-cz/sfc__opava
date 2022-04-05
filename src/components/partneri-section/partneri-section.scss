@@ -1,0 +1,17 @@
+.partners-section {
+  .h2 {
+    color: var(--color-blue);
+    text-transform: uppercase;
+    margin: 32px 0;
+  }
+  &__inner {
+    a {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+    img {
+      display: inline-block;
+    }
+  }
+}

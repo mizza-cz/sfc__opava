@@ -4,10 +4,11 @@
   padding-bottom: 56px;
   position: relative;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: url("../images/content/bgs.jpg");
+  max-width: 100%;
 }
 .base {
   background-color: #eef0f2;
