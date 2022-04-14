@@ -2,6 +2,17 @@
   .team-section__img img {
     object-position: 0 24px;
   }
+  .team-section__item:hover {
+    .team-section__img{
+      transform: scale(1.1);
+    }
+    .team-section__hover{
+      display: none;
+    }
+    .team-section__info{
+      transform: translateY(0rem);
+    }
+  }
 }
 .team-section {
   &__number {
@@ -129,6 +140,7 @@
     width: 100%;
     position: relative;
     z-index: 12;
+    transition: all .3s;
     img {
       width: 100%;
       height: 100%;
