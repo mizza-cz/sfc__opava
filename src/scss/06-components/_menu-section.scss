@@ -67,6 +67,7 @@
   }
   .h1 {
     margin-right: 80px;
+    text-transform: capitalize;
     @include media-breakpoint-down(xxl) {
       margin-bottom: 16px;
       width: 100%;

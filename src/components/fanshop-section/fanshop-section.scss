@@ -1,4 +1,4 @@
-.fanshop {
+.c-fanshop-section {
   margin-bottom: 40px;
   &__btn {
     border: 2px solid var(--color-light);
@@ -20,7 +20,7 @@
       height: 16px;
       margin-right: 8px;
     }
-    &.fanshop__btn--blue {
+    &.c-fanshop-section__btn--blue {
       border: 2px solid var(--color-blue);
       color: var(--color-blue);
       g path {
@@ -36,8 +36,8 @@
     text-decoration: none;
     padding-bottom: 40px;
     &:hover {
-      .fanshop-link__logo,
-      .fanshop__btn {
+      .c-fanshop-section-link__logo,
+      .c-fanshop-section__btn {
         transform: scale(1.1);
       }
     }
@@ -70,7 +70,7 @@
   border-left: 2px solid var(--color-yellow);
   padding: 40px 18px;
   &:hover {
-    .fanshop__btn {
+    .c-fanshop-section__btn {
       transform: scale(1.1);
     }
   }

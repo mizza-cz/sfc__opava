@@ -10,18 +10,15 @@ if($('.js-gallery').length) {
                    $size   = $(this).data('size').split('x'),
                    $width  = $size[0],
                    $height = $size[1];
- 
                var item = {
                    src : $href,
                    w   : $width,
                    h   : $height
                }
- 
                items.push(item);
            });
            return items;
        }
- 
        var items = getItems();
        $pic.on('click', 'figure', function(event) {
            event.preventDefault();
@@ -32,7 +29,6 @@ if($('.js-gallery').length) {
                bgOpacity: 0.7,
                showHideOpacity: true
            }
- 
            // Initialize PhotoSwipe
            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
            gallery.init();
