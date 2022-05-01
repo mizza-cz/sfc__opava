@@ -1,0 +1,51 @@
+.c-table-section {
+   
+   table {
+      background: var(--color-blue);
+      @include media-breakpoint-down(md){
+         width: max-content;
+      }
+   }
+
+   th {
+      padding-top: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--color-light);
+
+      a {
+         color: var(--color-light);
+         text-decoration: underline;
+         font-size: 18px;
+      }
+   }
+
+   td {
+      color: var(--color-light);
+   }
+
+   .opava td {
+      color: var(--color-yellow);
+   }
+
+   td {
+      border-left: none !important;
+   }
+
+   th,
+   td {
+      width: 30px;
+   }
+
+   th:first-child,
+   td:first-child {
+      width: 40px;
+      text-align: center !important;
+   }
+
+   th:nth-child(2),
+   td:nth-child(2) {
+      width: max-content !important;
+      max-width: 100%;
+   }
+
+}
