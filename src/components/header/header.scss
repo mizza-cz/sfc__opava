@@ -89,7 +89,6 @@
   align-items: center;
   &-nav {
     display: flex;
-
     @include media-breakpoint-down(xl) {
       flex-direction: column !important;
       text-align: center;
