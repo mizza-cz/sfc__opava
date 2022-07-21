@@ -15,6 +15,7 @@
     position: relative;
     transition: all 0.3s;
     z-index: 1;
+    margin-top: auto;
     svg {
       width: 19px;
       height: 16px;
@@ -65,10 +66,11 @@
 }
 .product {
   position: relative;
-  display: block;
   height: 100%;
   border-left: 2px solid var(--color-yellow);
   padding: 40px 18px;
+  display: flex;
+  flex-direction: column;
   &:hover {
     .c-fanshop-section__btn {
       transform: scale(1.1);
