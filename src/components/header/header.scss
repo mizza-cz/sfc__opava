@@ -233,6 +233,11 @@
     }
   }
 }
+// @media (max-width: 1200px) {
+//   .nav-link.off-link {
+//     pointer-events: none;
+//   }
+// }
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
