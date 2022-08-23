@@ -1,4 +1,12 @@
 .o-content {
+  iframe {
+    width: 100%;
+    display: block;
+    min-height: 200px;
+    @media (max-width: 540px) {
+      height: auto;
+    }
+  }
   &::after {
     display: table;
     clear: both;
