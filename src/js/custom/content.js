@@ -40,5 +40,10 @@ function iframesWrap() {
     iframeWrap.appendChild(contentIframes[i]);
   }
 }
-var myModal = new bootstrap.Modal(document.getElementById("ad-modal"));
-myModal.show();
+
+var modalElement = document.getElementById("ad-modal");
+if (modalElement) {
+  var myModal = new bootstrap.Modal(modalElement);
+  myModal.show();
+} else {
+}
