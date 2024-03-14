@@ -10,4 +10,9 @@
     width: fit-content;
     display: block;
   }
+  .post {
+    aspect-ratio: 380/380;
+    height: auto !important;
+    width: 100%;
+  }
 }
