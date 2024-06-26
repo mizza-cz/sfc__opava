@@ -1,0 +1,10 @@
+{% extends "@components/base/base.twig" %} {% set title = "12.0_Článek" %} {%
+block main %}
+<div class="container">
+  <div class="row">
+    {% include "@components/article-section/article-section-fonts.twig" %} {%
+    include "@components/aside/aside.twig" %}
+  </div>
+</div>
+{% include "@components/pub-section/pub-section.twig" %} {% include
+"@components/partners-section/partners-section.twig" %} {% endblock %}
