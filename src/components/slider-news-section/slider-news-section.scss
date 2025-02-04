@@ -44,6 +44,7 @@
   border: none;
   top: 53%;
   transform: translateY(-50%);
+  cursor: pointer;
   @include media-breakpoint-down(xxl) {
     top: auto;
     bottom: -70px;

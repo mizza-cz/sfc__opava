@@ -1,4 +1,4 @@
-.js-gallery {
+.photogallery-section {
   figure {
     width: 100%;
     display: block;
@@ -7,8 +7,6 @@
       transition: all 0.3s;
     }
   }
-}
-.photogallery-section {
   &__number {
     position: absolute;
     right: 24px;
